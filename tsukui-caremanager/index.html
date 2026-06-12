@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>採用競合分析レポート｜株式会社ツクイ（ケアマネジャー）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --red:#AE1C3B; --deep:#9C0B2D; --pink:#FBEBEE; --ink:#434343; --sub:#555555;
+  --gray:#F2F2F2; --rose:#B44D66; --crimson:#9A1132; --line:#DDDDDD;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans JP',sans-serif;color:var(--ink);background:#fff;line-height:1.8;font-size:15px}
+.hero{background:radial-gradient(circle at 50% 120%, var(--rose), var(--crimson));color:#fff;text-align:center;padding:72px 24px 64px}
+.hero .label{font-size:12px;letter-spacing:.35em;opacity:.85;margin-bottom:16px}
+.hero h1{font-size:34px;font-weight:900;letter-spacing:.06em}
+.hero .client{font-size:18px;font-weight:700;margin-top:18px}
+.hero .date{font-size:13px;opacity:.85;margin-top:8px}
+main{max-width:1080px;margin:0 auto;padding:0 24px 64px}
+section{margin-top:64px}
+h2{display:flex;align-items:center;gap:12px;font-size:21px;font-weight:900;color:var(--red);margin-bottom:8px}
+h2::before{content:"";width:6px;height:26px;background:var(--red);border-radius:2px}
+.h2-sub{color:var(--sub);font-size:13px;margin-bottom:24px}
+h3{font-size:16px;font-weight:700;color:var(--ink);margin:24px 0 12px}
+.summary{background:var(--pink);border-radius:10px;padding:28px 32px}
+.summary li{margin-left:1.3em;margin-bottom:6px}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:#fff}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+th{background:var(--deep);color:#fff;font-weight:700;padding:10px 14px;text-align:left;white-space:nowrap}
+td{padding:10px 14px;border-top:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--gray)}
+td.firstcol,th.firstcol{position:sticky;left:0;background:#fff;font-weight:700;min-width:9em}
+tr:nth-child(even) td.firstcol{background:var(--gray)}
+.company{border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:28px}
+.company-head{background:var(--red);color:#fff;padding:14px 24px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.company-head .name{font-size:18px;font-weight:900}
+.company-head .role{font-size:12px;opacity:.9}
+.company-body{padding:8px 24px 24px}
+.item{padding:14px 0;border-bottom:1px dashed var(--line)}
+.item:last-child{border-bottom:none}
+.item .q{font-size:12px;font-weight:700;color:var(--red);letter-spacing:.05em;margin-bottom:4px}
+.copy{background:var(--pink);border-left:4px solid var(--red);padding:12px 18px;border-radius:0 8px 8px 0;font-size:17px;font-weight:700;margin:6px 0}
+.copy small{display:block;font-size:11px;font-weight:400;color:var(--sub);margin-top:4px}
+.src{font-size:11px;color:#999;word-break:break-all}
+.tag{display:inline-block;background:var(--pink);color:var(--deep);border:1px solid var(--rose);border-radius:999px;padding:1px 11px;font-size:12px;font-weight:500;margin:2px 3px 2px 0;white-space:nowrap}
+.tag.off{background:#fff;color:#999;border-color:var(--line)}
+.badge{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;font-weight:900;font-size:15px;vertical-align:middle}
+.b-best{background:var(--deep);color:#fff}
+.b-good{background:#fff;color:var(--deep);border:2px solid var(--deep)}
+.b-mid{background:var(--gray);color:var(--sub);border:1px solid var(--line)}
+.b-low{background:#fff;color:#aaa;border:1px dashed #bbb}
+.map-note{display:flex;gap:18px;font-size:12.5px;color:var(--sub);margin-top:10px;flex-wrap:wrap}
+.dot{color:var(--red);font-weight:900}
+.weak{color:#b0a0a4}
+.cell-blank{background:var(--pink)!important;font-weight:700;color:var(--red)}
+.usp{display:flex;gap:16px;border:1px solid var(--line);border-radius:10px;padding:22px 24px;margin-bottom:16px;align-items:flex-start}
+.usp .num{flex:none;width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;font-weight:900;font-size:17px;display:flex;align-items:center;justify-content:center}
+.usp h4{font-size:17px;font-weight:900;color:var(--red);margin-bottom:6px}
+.usp .basis{font-size:13px;color:var(--sub);background:var(--gray);border-radius:6px;padding:8px 14px;margin-top:10px}
+.kakunin{display:inline-block;background:#fff;border:1px solid var(--red);color:var(--red);font-size:11px;border-radius:4px;padding:0 6px;margin-left:6px}
+.flow{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.flow .step{background:var(--pink);border-radius:10px;padding:20px 22px}
+.flow .step .stepname{font-weight:900;color:var(--deep);font-size:15px;margin-bottom:8px}
+.flow .step p{font-size:13.5px}
+.sources{font-size:12px;color:var(--sub)}
+.sources li{margin-bottom:4px;word-break:break-all;margin-left:1.3em}
+.sources h3{margin-top:18px;margin-bottom:8px;font-size:13.5px;color:var(--red)}
+footer{background:var(--red);color:#fff;text-align:center;font-size:11px;padding:14px;margin-top:64px}
+@media(max-width:640px){.hero h1{font-size:24px}main{padding:0 14px 48px}.company-body{padding:4px 16px 16px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <p class="label">RECRUITING COMPETITOR ANALYSIS</p>
+  <h1>採用競合分析レポート</h1>
+  <p class="client">株式会社ツクイ 御中｜ケアマネジャー採用</p>
+  <p class="date">2026年6月12日｜株式会社EISHIN</p>
+</header>
+
+<main>
+
+<section>
+  <h2>エグゼクティブサマリー</h2>
+  <p class="h2-sub">本調査の結論。詳細は以降の各セクションを参照。</p>
+  <div class="summary">
+    <ul>
+      <li>3社のケアマネ求人の訴求は<strong>「研修充実×残業少・日勤×未経験OK×大手の安定」に集中</strong>しており、条件面では同質化。横並びの条件訴求では差別化できない状態。</li>
+      <li>採用コンセプトをケアマネ職種まで貫通させている会社は<strong>3社中ゼロ</strong>。ベネッセスタイルケアはケアマネ専用LP・専用コピー自体がなく、ニチイ学館はLPの「働きやすさも働きがいも」が求人媒体上では条件訴求に置き換わって消える。</li>
+      <li><strong>ケアマネ層に向けたSNS発信は3社とも空白</strong>。各社の採用SNSは新卒向け中心で、中途ケアマネへの発信チャネルは未開拓。</li>
+      <li>空白の訴求軸は<strong>「ケアマネの専門性・やりがいを正面から語る軸」と「在宅・地域密着の物語」</strong>。貴社は居宅介護支援の全国網と、媒体まで貫通している「私らしく働ける」（髪色・ネイル自由）という既存資産でこの空白を取れる。</li>
+      <li>貴社側の課題は、ケアマネLPのコピーが全社採用コンセプト「私らしく働ける」と<strong>分断している</strong>こと。上流設計での一本化余地が大きい。</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>調査対象と方法</h2>
+  <p class="h2-sub">取得日時点でWeb上で確認できた情報に基づく。数字はすべて出典つき。</p>
+  <p>対象は貴社（株式会社ツクイ）と、ご指定いただいた採用競合2社。ニチイはニチイ学館（在宅・居宅系）とニチイケアパレス（有料老人ホーム「ニチイホーム」）で採用サイトが分かれているため、両方を調査した。</p>
+  <div class="table-wrap" style="margin-top:14px">
+    <table>
+      <tr><th>企業</th><th>位置づけ</th><th>ケアマネ採用の主戦場</th></tr>
+      <tr><td><strong>株式会社ツクイ</strong></td><td>クライアント。全国47都道府県でデイサービス・訪問介護・居宅介護支援等を展開</td><td>居宅介護支援（在宅系）中心</td></tr>
+      <tr><td><strong>株式会社ベネッセスタイルケア</strong></td><td>ベネッセグループ。有料老人ホーム「アリア」「くらら」「グランダ」等を首都圏・関西中心に運営</td><td>施設（有料老人ホーム）ケアマネ中心</td></tr>
+      <tr><td><strong>ニチイグループ</strong></td><td>ニチイ学館（介護・医療事務大手、約1,900拠点）＋ニチイケアパレス（有料老人ホーム）</td><td>学館=在宅系／ケアパレス=施設系</td></tr>
+    </table>
+  </div>
+  <p style="margin-top:14px">調査日: 2026年6月12日。方法: 各社の採用サイト・採用LP・求人媒体（総合8媒体＋介護特化5媒体）・SNS（X / Instagram / TikTok / YouTube / Facebook）をWeb検索とページ取得で確認。確認できなかった項目は「未確認」と明記した。</p>
+</section>
+
+<section>
+  <h2>横並び比較</h2>
+  <p class="h2-sub">7項目 × 3社の一覧。詳細と出典は「各社詳細」を参照。</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th class="firstcol">項目</th><th>ツクイ（貴社）</th><th>ベネッセスタイルケア</th><th>ニチイ（学館／ケアパレス）</th></tr>
+      <tr>
+        <td class="firstcol">採用キャッチコピー<br>（ケアマネ向け）</td>
+        <td>「あなたのサポートが誰かの安心につながる。ツクイのケアマネージャー。」<br><span class="src">※全社コピー「私らしく働ける」とは別系統</span></td>
+        <td><strong>ケアマネ専用コピーなし</strong>（職種別求人一覧ページのみ）</td>
+        <td>学館「『働きやすさ』も『働きがい』も手に入る 私らしいキャリアが築ける」<br>ケアパレスはコピー分散</td>
+      </tr>
+      <tr>
+        <td class="firstcol">採用サイトの主コンテンツ</td>
+        <td>数字で見る働きやすさ（残業4.2h・有給11.3日）＋社員インタビュー9職種</td>
+        <td>求人検索ポータル型＋スタッフインタビュー12件</td>
+        <td>学館LP「9の理由」の数字訴求＋研修費全額負担。ケアパレスは動画・AI/IoT設備</td>
+      </tr>
+      <tr>
+        <td class="firstcol">掲載求人メディア</td>
+        <td>自社サイト（230件）＋Indeed＋ジョブメドレー特集＋ウェルミージョブ＋バイトル・タウンワーク等。総合転職媒体は不使用</td>
+        <td>自社（25件）＋ジョブメドレー直接掲載＋介護特化エージェント。総合媒体は本部職種のみ</td>
+        <td>自社＋Indeed直接掲載＋マイナビ介護職（1,534件）・レバウェル等エージェント併用</td>
+      </tr>
+      <tr>
+        <td class="firstcol">媒体での主訴求</td>
+        <td>研修充実（最頻出）・賞与手当・残業少・髪色/ネイル自由</td>
+        <td>夜勤なし日勤のみ・フレックス・未経験/ブランクOK</td>
+        <td>給与・手当の細目（CM手当3万円等）・週2〜3日OK・研修費全額</td>
+      </tr>
+      <tr>
+        <td class="firstcol">Indeed求人数（概数）</td>
+        <td>約4,850件（全職種）<br><span class="src">ケアマネ絞り込みは未確認（自社サイト230件が代替指標）</span></td>
+        <td>約4,913件（全職種）<br>ケアマネ絞り込み73件</td>
+        <td>学館 約4,996件＋ケアパレス 約648件（全職種）</td>
+      </tr>
+      <tr>
+        <td class="firstcol">SNS採用アカウント</td>
+        <td>Instagram採用専用（フォロワー約1,284）。TikTokなし</td>
+        <td>Instagram新卒専用（約868）＋採用YouTube。中途向けなし</td>
+        <td>X介護職採用（更新停滞気味）＋Instagram新卒＋採用LINE</td>
+      </tr>
+      <tr>
+        <td class="firstcol">発信の一貫性</td>
+        <td><span class="badge b-good">○</span> 要素は貫通、コピーは分断</td>
+        <td><span class="badge b-good">○</span> 訴求軸は統一、コピー・専用発信なし</td>
+        <td><span class="badge b-good">○</span> 学館 ／ <span class="badge b-mid">△</span> ケアパレス</td>
+      </tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>各社詳細</h2>
+  <p class="h2-sub">貴社を含む3社を同一フォーマットで調査。</p>
+
+  <div class="company">
+    <div class="company-head"><span class="name">株式会社ツクイ</span><span class="role">クライアント</span></div>
+    <div class="company-body">
+      <div class="item"><p class="q">1. 採用キャッチコピー</p>
+        <div class="copy">「あなたのサポートが誰かの安心につながる。ツクイのケアマネージャー。」<small>ケアマネ採用LP（サブ:「社会福祉の専門家としてお客様の自立支援・自己実現をサポート」）</small></div>
+        <div class="copy">「私らしく働ける」<small>キャリア採用サイト全体（サブ:「自然と笑顔になれる場所」）</small></div>
+        <p>ケアマネLPと全社採用サイトでコピーが2系統に分かれており、相互の接続がない。</p>
+        <p class="src">出典: recruit.tsukui.net/career/lp/service/care-plan.html ／ recruit.tsukui.net/career/（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">2. 採用サイトのコンテンツ構成</p>
+        <p>最上位に「働きやすさのヒミツ」として定量訴求（月平均残業4.2時間・年次有給取得11.3日・育児短時間勤務は中学就学まで）。次いで社員インタビュー9職種。研修制度・キャリアパス・D&Iも整備。ケアマネLPは仕事内容→1日の流れ→インタビュー4名→福利厚生（結婚・出生・入学祝金等）→3段階研修＋資格取得補助（奨励金1〜3万円、研修受講料5万円まで支給）の構成。「数字」と「人」に力点。</p>
+      </div>
+      <div class="item"><p class="q">3. 掲載求人メディア</p>
+        <p><span class="tag">自社求人サイト（ケアマネ230件）</span><span class="tag">Indeed（直接＋転載）</span><span class="tag">求人ボックス</span><span class="tag">スタンバイ</span><span class="tag">ジョブメドレー（企業特集・153件）</span><span class="tag">ウェルミージョブ（旧カイゴジョブ）</span><span class="tag">マイナビ介護職（紹介）</span><span class="tag">バイトル</span><span class="tag">タウンワーク</span><span class="tag">ハローワーク</span><span class="tag off">doda（なし）</span><span class="tag off">リクナビNEXT（なし）</span><span class="tag off">エン転職（全件掲載終了）</span></p>
+        <p>自社系求人サイトを複数並行運用（tsukui-recruit.net／テンリク／tsukui-job.net）。介護特化媒体への直接掲載が厚く、総合転職媒体は使っていない。</p>
+      </div>
+      <div class="item"><p class="q">4. 媒体での訴求内容</p>
+        <p><span class="tag">研修充実（最頻出）</span><span class="tag">賞与・手当</span><span class="tag">残業少・日勤</span><span class="tag">自分らしさ（髪色・ネイル自由）</span><span class="tag">未経験歓迎</span><span class="tag">休日数（年間116日）</span><span class="tag">安定性（業界トップクラス）</span><span class="tag">キャリアアップ（主任CM）</span></p>
+        <p>「更新研修料は全額支給（勤務扱い）」「入社から1年間はチューターが育成・フォロー」「夜間対応・オンコールなし」「髪色・髪型自由！ネイルOK」が特徴的。給与は月給22.1万〜31.5万円（媒体・拠点により幅）。</p>
+        <p class="src">出典: ジョブメドレー・ウェルミージョブ・Indeed各求人原稿（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">5. Indeed求人数</p>
+        <p>全職種 <strong>約4,850件</strong>（Indeed会社ページ表示値）。ケアマネ絞り込みは未確認（キーワード検索は他社混在のため不採用）。代替指標: 自社求人サイトのケアマネ職種230件。</p>
+        <p class="src">出典: jp.indeed.com/cmp/株式会社ツクイ/jobs ／ tsukui-recruit.net（いずれも2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">6. SNS採用アカウント</p>
+        <p>採用専用はInstagram <strong>@tsukui_recruit</strong>（フォロワー約1,284・リール中心に働き方を発信）のみ。X・YouTube・Facebookはグループ公式アカウント内で採用コンテンツを発信（YouTubeに「ツクイの採用」プレイリストあり）。TikTokはなし。</p>
+        <p class="src">出典: corp.tsukui.net/info/sns_acount.html ほか（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">7. 発信の一貫性</p>
+        <p><span class="badge b-good">○</span>　「私らしく」の要素（髪色・ネイル自由、個性尊重）と「研修×働きやすさ」が媒体まで貫通。ただしコピーそのものは媒体に出ず、ケアマネLPコピーも別系統。SNSの発信力も弱く、コピーまで統一された◎には届かない。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="company">
+    <div class="company-head"><span class="name">株式会社ベネッセスタイルケア</span><span class="role">競合</span></div>
+    <div class="company-body">
+      <div class="item"><p class="q">1. 採用キャッチコピー</p>
+        <div class="copy">「お客様の『よく生きる』をともに」<small>採用サイト総合トップ（グループ理念由来）</small></div>
+        <p><strong>ケアマネ専用のLP・キャッチコピーは存在しない</strong>。職種別ページは求人一覧のみ。採用ムービーのタイトルとして「人生に、いちばん近い仕事」を使用。</p>
+        <p class="src">出典: saiyo.benesse-style-care.co.jp ほか（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">2. 採用サイトのコンテンツ構成</p>
+        <p>求人検索機能＋スタッフインタビュー12件が中心の「求人ポータル型」。研修・福利厚生・キャリアプラン・職場データ・社長メッセージはあるが、世界観訴求より検索利便性を優先した構成。コンセプト型の作りは新卒ページのみ。</p>
+      </div>
+      <div class="item"><p class="q">3. 掲載求人メディア</p>
+        <p><span class="tag">自社採用サイト（ケアマネ25件）</span><span class="tag">ジョブメドレー（直接掲載）</span><span class="tag">カイゴジョブ</span><span class="tag">Indeed</span><span class="tag">求人ボックス</span><span class="tag">マイナビ介護職（紹介・1件）</span><span class="tag">レバウェル介護（紹介)</span><span class="tag">各種転職エージェント</span><span class="tag off">doda（本部職種のみ）</span><span class="tag off">マイナビ転職（本部職種のみ）</span><span class="tag off">エン転職（掲載終了）</span></p>
+        <p>ケアマネ採用は「自社サイト＋ジョブメドレー直接掲載＋介護特化エージェント」が主戦場。総合転職媒体はケアマネには使っていない。</p>
+      </div>
+      <div class="item"><p class="q">4. 媒体での訴求内容</p>
+        <p><span class="tag">夜勤なし・日勤のみ（主力）</span><span class="tag">フレックスタイム（主力）</span><span class="tag">未経験・ブランクOK（主力）</span><span class="tag">更新研修費用全額助成</span><span class="tag">安定性（ベネッセG）</span><span class="tag">介護業務なし・ケアマネ専任</span><span class="tag">保育手当・進研ゼミ割引</span></p>
+        <p>給与は月給25.4万円（札幌）〜33.3万円（世田谷）、年収例363万〜453万円。手当内訳（地域調整・業務・固定残業・居住支援等）の開示水準が高い。訴求軸は全媒体でほぼ同一。</p>
+        <p class="src">出典: 公式求人詳細・ジョブメドレー・カイゴジョブ各原稿（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">5. Indeed求人数</p>
+        <p>全職種 <strong>4,913件</strong>、ケアマネ絞り込み <strong>73件</strong>（いずれもIndeed企業ページ表示値）。参考: 企業クチコミ評価3.3/5.0（236件）。</p>
+        <p class="src">出典: jp.indeed.com/cmp/株式会社ベネッセスタイルケア（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">6. SNS採用アカウント</p>
+        <p>Instagram <strong>@benesse_style_care_shinsotsu</strong>（首都圏新卒採用・フォロワー約868）と採用専用YouTubeチャンネルのみ。<strong>中途・ケアマネ向けのSNS発信は実質ゼロ</strong>。X・TikTok・Facebookの採用アカウントは未確認。</p>
+        <p class="src">出典: Instagram・YouTube・ベネッセG公式SNS一覧（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">7. 発信の一貫性</p>
+        <p><span class="badge b-good">○</span>　「夜勤なし×フレックス×未経験OK×安定基盤」の訴求軸は自社サイトから各媒体まで統一。一方コピーレベルの統一はなく、ケアマネ専用LP・SNS発信が不在のため、職種への落とし込みが弱い。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="company">
+    <div class="company-head"><span class="name">ニチイグループ（ニチイ学館／ニチイケアパレス）</span><span class="role">競合</span></div>
+    <div class="company-body">
+      <div class="item"><p class="q">1. 採用キャッチコピー</p>
+        <div class="copy">「『働きやすさ』も『働きがい』も手に入る 私らしいキャリアが築ける ニチイのケアマネジャー」<small>ニチイ学館 ケアマネ採用LP</small></div>
+        <div class="copy">「さぁ、『私らしく』をよくばろう。」<small>ニチイ学館 介護職採用サイト「きゃりあネット」全体</small></div>
+        <p>学館は職種LPと全体サイトで「私らしい」がトーン連動。一方ニチイケアパレスは「チームケア」「お客様のHOME」などメッセージが分散し、束ねるコピーが不在。</p>
+        <p class="src">出典: kaigo.nichiigakkan-careerplus.jp/lp/caremanager/ ほか（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">2. 採用サイトのコンテンツ構成</p>
+        <p>学館ケアマネLPは「選ばれる9の理由」で数字訴求（未経験入社率約80%・平均残業5.39時間・育休取得率93%・全国約1,900拠点）→福利厚生（1人1台PC・携帯貸与、カスハラ対応方針明文化）→研修（更新研修・主任CM研修を全額会社負担）→インタビュー＋1日の流れ。数字と研修費全額に力点。ケアパレスは動画（1日密着）とAI・IoT設備訴求が中心。</p>
+      </div>
+      <div class="item"><p class="q">3. 掲載求人メディア</p>
+        <p><span class="tag">自社（きゃりあネット）</span><span class="tag">Indeed（直接掲載）</span><span class="tag">求人ボックス（ケアマネ1,814件）</span><span class="tag">マイナビ介護職（紹介・1,534件）</span><span class="tag">レバウェル介護（紹介）</span><span class="tag">カイゴジョブ</span><span class="tag">介護求人ナビ</span><span class="tag">e介護転職</span><span class="tag off">マイナビ転職（他職種のみ）</span><span class="tag off">エン転職（なし）</span></p>
+        <p>直接掲載の主軸はIndeed＋自社サイト。介護特化はエージェント型を厚めに併用する構造。</p>
+      </div>
+      <div class="item"><p class="q">4. 媒体での訴求内容</p>
+        <p><span class="tag">給与・手当の細目（CM手当3万円/主任3.5万円・プラン手当2万円）</span><span class="tag">研修費全額</span><span class="tag">柔軟シフト（週2〜3日OK）</span><span class="tag">未経験・ブランクOK</span><span class="tag">転勤なし選択</span><span class="tag">残業少</span></p>
+        <p>給与は新宿 月給31.8万〜35.8万円に対し青森 月収26.1万円〜と地域差が大きい。LPの「働きがい」軸は媒体上ではほぼ消え、条件訴求に置き換わる。留意点: Indeedの給与情報ページに「介護支援専門員 平均月給約21.5万円（全国平均を11%下回る）」というネガティブ表示あり。</p>
+        <p class="src">出典: Indeed各求人・マイナビ介護職原稿（2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">5. Indeed求人数</p>
+        <p>ニチイ学館 全職種 <strong>約4,996件</strong>＋ニチイケアパレス <strong>約648件</strong>（各企業ページ表示値）。ケアマネ絞り込みの正確な件数は未確認。代替指標: 求人ボックス「ニチイ学館 ケアマネジャー」1,814件。</p>
+        <p class="src">出典: jp.indeed.com各企業ページ ／ kyujinbox.com（いずれも2026-06-12取得）</p>
+      </div>
+      <div class="item"><p class="q">6. SNS採用アカウント</p>
+        <p>X <strong>@Nichii_r_c_new</strong>（介護職採用専用。ただし新卒・インターン向け投稿中心で更新停滞気味）、Instagram新卒採用、YouTube（登録者約7,170人）、ケアパレスは採用LINE公式あり。チャネル数は3社で最多だが、中途ケアマネ向けの発信はなし。</p>
+        <p class="src">出典: X・Instagram・YouTube各アカウント（2026-06-12取得。フォロワー数の一部は未確認）</p>
+      </div>
+      <div class="item"><p class="q">7. 発信の一貫性</p>
+        <p><span class="badge b-good">○</span>　学館: 「私らしい」軸がサイト→LPまで貫通し数値根拠も一貫するが、媒体では条件訴求に置き換わり消える。<br><span class="badge b-mid">△</span>　ケアパレス: 中途サイト・新卒サイト・媒体でメッセージがバラバラで、統一コンセプトが確認できない。</p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<section>
+  <h2>訴求軸マップ</h2>
+  <p class="h2-sub"><span class="dot">●</span>=主訴求　<span class="weak">△</span>=言及あり（弱い）　−=確認できず。<span style="background:var(--pink);padding:0 6px;border-radius:3px;color:var(--red);font-weight:700">桃色の行</span>=どの社も取り切れていない空白ゾーン。</p>
+  <div class="table-wrap">
+    <table>
+      <tr><th class="firstcol">訴求軸</th><th>ツクイ（貴社）</th><th>ベネッセ</th><th>ニチイ</th></tr>
+      <tr><td class="firstcol">研修充実・資格支援</td><td><span class="dot">●</span> 更新研修 全額＋勤務扱い</td><td><span class="dot">●</span> 全額助成</td><td><span class="dot">●</span> 全額会社負担</td></tr>
+      <tr><td class="firstcol">残業少・日勤のみ</td><td><span class="dot">●</span> 残業4.2h／オンコールなし</td><td><span class="dot">●</span> 夜勤なし（主力）</td><td><span class="dot">●</span> 残業5.39h</td></tr>
+      <tr><td class="firstcol">未経験・ブランクOK</td><td><span class="dot">●</span></td><td><span class="dot">●</span>（主力）</td><td><span class="dot">●</span></td></tr>
+      <tr><td class="firstcol">柔軟シフト</td><td><span class="dot">●</span> パート週1〜3日</td><td><span class="dot">●</span> フレックス（主力）</td><td><span class="dot">●</span> 週2〜3日OK</td></tr>
+      <tr><td class="firstcol">給与・賞与・手当</td><td><span class="dot">●</span></td><td><span class="dot">●</span> 内訳開示が詳細</td><td><span class="dot">●</span> 手当細目まで開示</td></tr>
+      <tr><td class="firstcol">安定性（大手・全国）</td><td><span class="dot">●</span></td><td><span class="dot">●</span></td><td><span class="dot">●</span></td></tr>
+      <tr><td class="firstcol">福利厚生</td><td><span class="dot">●</span> 祝金各種</td><td><span class="dot">●</span> 保育手当等</td><td><span class="dot">●</span> 託児補助等</td></tr>
+      <tr><td class="firstcol">休日数</td><td><span class="dot">●</span> 年間116日</td><td><span class="weak">△</span> 113日</td><td><span class="weak">△</span> 105日（青森例）</td></tr>
+      <tr><td class="firstcol">キャリアアップ（主任CM）</td><td><span class="dot">●</span></td><td><span class="weak">△</span></td><td><span class="dot">●</span></td></tr>
+      <tr><td class="firstcol">業務負荷の軽さ（専任制）</td><td><span class="weak">△</span> プラン数手当</td><td><span class="dot">●</span> 介護業務なし専任</td><td><span class="weak">△</span></td></tr>
+      <tr><td class="firstcol">ICT・業務環境</td><td>−</td><td><span class="weak">△</span></td><td><span class="dot">●</span> 1人1台PC・携帯</td></tr>
+      <tr><td class="firstcol">自分らしさ・職場の自由度</td><td><span class="dot">●</span> 髪色・ネイル自由が媒体まで貫通</td><td><span class="weak">△</span></td><td><span class="weak">△</span> LPのみ</td></tr>
+      <tr><td class="firstcol cell-blank">ケアマネの専門性・やりがい</td><td class="cell-blank"><span class="weak">△</span> LPサブコピーのみ</td><td class="cell-blank">−</td><td class="cell-blank"><span class="weak">△</span> LPのみ・媒体で消滅</td></tr>
+      <tr><td class="firstcol cell-blank">在宅・地域密着の物語</td><td class="cell-blank"><span class="weak">△</span> 事実はあるが未言語化</td><td class="cell-blank">−（施設中心）</td><td class="cell-blank">−</td></tr>
+    </table>
+  </div>
+  <div class="map-note"><span>上段7軸は混雑ゾーン: 全社が訴求しており、条件を並べても差別化にならない</span><span>桃色の2軸が空白ゾーン: USP仮説の土台</span></div>
+</section>
+
+<section>
+  <h2>USP仮説</h2>
+  <p class="h2-sub">競合の空白 × 貴社の事実 から導いた独自ポジションの仮説。<span class="kakunin">要確認</span>は貴社へのヒアリングで裏付けが必要な項目。</p>
+
+  <div class="usp">
+    <div class="num">1</div>
+    <div>
+      <h4>「地域の在宅生活を支える」居宅ケアマネのポジションを単独で取る</h4>
+      <p>ベネッセとニチイケアパレスのケアマネ採用は有料老人ホーム（施設）中心。貴社は全国47都道府県の居宅介護支援＋デイサービス併設という事業構造を持ち、「施設の中ではなく、地域の暮らしを支えるケアマネ」という物語を語れる唯一のポジションにいる。土日休み・夜間オンコールなしという居宅ならではの働き方が裏付けになる。</p>
+      <p class="basis"><strong>根拠:</strong> 競合の空白（在宅・地域密着の物語が3社とも不在）× 貴社の事実（ケアマネ求人230件・全国展開・オンコールなし訴求）。オンコール運用が全拠点共通かは<span class="kakunin">要確認</span></p>
+    </div>
+  </div>
+
+  <div class="usp">
+    <div class="num">2</div>
+    <div>
+      <h4>「私らしく働ける」をケアマネ向けコンセプトに昇華する</h4>
+      <p>髪色・ネイル自由、個性尊重が求人原稿レベルまで一貫して出ているのは3社中ツクイのみ。ただし現状のケアマネLPコピーはこの資産と接続していない。全社コンセプトをケアマネの仕事観（担当者として一人ひとりに向き合う裁量）まで言語化し直せば、空白の「専門性・やりがい」軸を最初に取れる。</p>
+      <p class="basis"><strong>根拠:</strong> 競合の空白（コピーがケアマネ職種まで届いている会社ゼロ）× 貴社の事実（「私らしく働ける」と自由度の訴求が媒体まで貫通済み）</p>
+    </div>
+  </div>
+
+  <div class="usp">
+    <div class="num">3</div>
+    <div>
+      <h4>「ケアマネデビュー・復帰に最も伴走する会社」</h4>
+      <p>入社後1年間のチューター制・3段階研修・更新研修の費用全額支給かつ勤務扱いは、支援の具体性で競合を上回る（ベネッセ=全額助成、ニチイ=全額負担だが勤務扱い・チューター制の記載なし）。「資格は取ったが実務が不安」「ブランクがある」層に向けた『初めてのケアマネならツクイ』ポジション。</p>
+      <p class="basis"><strong>根拠:</strong> 競合の空白（研修訴求は横並びだが運用の具体性が薄い）× 貴社の事実（チューター制・勤務扱いの明記）。現場での運用実態は<span class="kakunin">要確認</span></p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>ご提案への接続</h2>
+  <p class="h2-sub">本調査結果は、以下の3ステップにそのまま活用する。</p>
+  <div class="flow">
+    <div class="step"><p class="stepname">STEP1　上流設計</p><p>全社コンセプト「私らしく働ける」とケアマネLPコピーの分断を解消し、USP仮説を軸にケアマネ採用コンセプトを一本化。ペルソナ（転職検討中ケアマネ／資格取得直後・復帰層）の確定と合わせ、訴求軸の優先順位を決定する。</p></div>
+    <div class="step"><p class="stepname">STEP2　LP制作</p><p>ベネッセは専用LPなし、ニチイは数字訴求型。空白の「在宅×自分らしさ×伴走」をコンセプトに据え、競合が出し切っている数字（残業・休日・研修費）は裏付けとして配置する構成で、専用コピーを持つLPとして差別化する。</p></div>
+    <div class="step"><p class="stepname">STEP3　WEB広告</p><p>Indeed上は3社とも約4,800〜5,000件の物量勝負で埋もれやすい。ケアマネ向けSNS発信が3社とも空白のため、既存Instagram採用アカウントを起点としたSNS広告＋専用LPへの誘導で先行できる。本調査の媒体マップを広告予算配分の基準データとして使う。</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>出典一覧</h2>
+  <p class="h2-sub">本レポートで参照した主要URL（すべて2026年6月12日取得）。</p>
+  <div class="sources">
+    <h3>株式会社ツクイ</h3>
+    <ul>
+      <li>https://recruit.tsukui.net/career/lp/service/care-plan.html（ケアマネ採用LP）</li>
+      <li>https://recruit.tsukui.net/career/（キャリア採用サイト）</li>
+      <li>https://tsukui-recruit.net/jobfind-pc/area/All?jobtype=00015（公式求人検索・ケアマネ230件）</li>
+      <li>https://jp.indeed.com/cmp/株式会社ツクイ/jobs（Indeed会社ページ・約4,850件）</li>
+      <li>https://job-medley.com/cm/special_company_tsukui/（ジョブメドレー企業特集・ケアマネ153件）</li>
+      <li>https://www.kaigojob.com/corporations/216519（ウェルミージョブ法人ページ）</li>
+      <li>https://kaigoshoku.mynavi.jp/r/co_401326（マイナビ介護職法人ページ）</li>
+      <li>https://employment.en-japan.com/comp-64140/list/（エン転職・全件掲載終了）</li>
+      <li>https://corp.tsukui.net/info/sns_acount.html（公式SNSアカウント一覧）</li>
+      <li>https://www.instagram.com/tsukui_recruit/（Instagram採用公式）</li>
+      <li>https://www.youtube.com/playlist?list=PLI-ZhFbFhvcy4ZrCdCshAgoJogcgx8PCo（YouTube「ツクイの採用」）</li>
+    </ul>
+    <h3>株式会社ベネッセスタイルケア</h3>
+    <ul>
+      <li>https://saiyo.benesse-style-care.co.jp/kaigo/job/search/license_cm（ケアマネ求人一覧・25件）</li>
+      <li>https://saiyo.benesse-style-care.co.jp/kaigo/（介護職採用サイト）</li>
+      <li>https://jp.indeed.com/cmp/株式会社ベネッセスタイルケア（Indeed企業ページ・4,913件／ケアマネ73件）</li>
+      <li>https://job-medley.com/cm/321177/（ジョブメドレー・ケアマネ求人）</li>
+      <li>https://www.kaigojob.com/job-postings/212478（カイゴジョブ・ケアマネ求人）</li>
+      <li>https://kaigoshoku.mynavi.jp/r/co_408073（マイナビ介護職・9件）</li>
+      <li>https://tenshoku.mynavi.jp/company/272173/joblist/（マイナビ転職・本部系24件）</li>
+      <li>https://www.instagram.com/benesse_style_care_shinsotsu/（Instagram新卒採用）</li>
+      <li>https://www.youtube.com/user/bscsaiyou（YouTube採用チャンネル）</li>
+      <li>https://www.youtube.com/watch?v=H79_3UDWcfk（採用ムービー「人生に、いちばん近い仕事」）</li>
+    </ul>
+    <h3>ニチイグループ</h3>
+    <ul>
+      <li>https://kaigo.nichiigakkan-careerplus.jp/lp/caremanager/（ニチイ学館ケアマネ採用LP）</li>
+      <li>https://kaigo.nichiigakkan-careerplus.jp/（介護職採用サイト「きゃりあネット」）</li>
+      <li>https://saiyo2.nichii-home.jp/job_kaigo-shien-senmonin.html（ニチイケアパレス・ケアマネ職種ページ）</li>
+      <li>https://jp.indeed.com/cmp/株式会社ニチイ学館-3/jobs（Indeed・約4,996件）</li>
+      <li>https://jp.indeed.com/cmp/株式会社ニチイケアパレス/jobs（Indeed・約648件）</li>
+      <li>https://kyujinbox.com/ニチイ学館-ケアマネジャーの仕事（求人ボックス・1,814件）</li>
+      <li>https://kaigoshoku.mynavi.jp/r/co_421595（マイナビ介護職・1,534件）</li>
+      <li>https://kaigoshoku.mynavi.jp/d/10207616（マイナビ介護職・ケアマネ求人詳細）</li>
+      <li>https://job.kiracare.jp/word/5/（レバウェル介護・1,088件）</li>
+      <li>https://x.com/nichii_r_c_new（X介護職採用）</li>
+      <li>https://www.instagram.com/nichii_shinsotsu_official/（Instagram新卒採用）</li>
+      <li>https://saiyo2.nichii-home.jp/lineopen.html（採用LINE開設告知）</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>Copyright (C) EISHIN Co.,LTD. All Rights Reserved.</footer>
+</body>
+</html>

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive">
-<title>採用競合分析（改訂版）｜株式会社サンスパック</title>
+<title>採用競合分析｜株式会社サンスパック</title>
 </head>
 <body>
 <style>
@@ -81,6 +81,22 @@
   .oa table.cmp td.self{background:rgba(174,28,60,.03)}
   .oa table.cmp .sub{color:#94A3B8;font-size:10px;display:block}
   .oa .mk{font-weight:800} .oa .mk.g{color:#0F7A63} .oa .mk.r{color:#B02A45} .oa .mk.y{color:var(--warning)}
+  .oa .tier2{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+  .oa .t2{border-radius:10px;border:1px solid var(--line);background:#fff;padding:13px 15px}
+  .oa .t2 h4{font-size:13px;font-weight:800;color:var(--s800);margin-bottom:3px}
+  .oa .t2 .sz{font-size:10px;color:#94A3B8;margin-bottom:6px}
+  .oa .t2 p{font-size:11.5px;color:var(--s600);line-height:1.6}
+  .oa .t2 p b{color:var(--s800)}
+  .oa .shock{border-radius:12px;background:rgba(223,58,93,.06);border:1px solid rgba(223,58,93,.32);padding:18px 20px}
+  .oa .shock+.shock{margin-top:13px}
+  .oa .shock .lb{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#B02A45;margin-bottom:5px}
+  .oa .shock h3{font-size:15.5px;font-weight:800;color:var(--s800);margin-bottom:8px;line-height:1.5}
+  .oa .shock p{font-size:12.5px;color:var(--s700);line-height:1.8} .oa .shock p b{color:#B02A45}
+  .oa .shock table{border-collapse:collapse;width:100%;margin-top:11px;font-size:11.5px;background:#fff;border-radius:8px;overflow:hidden}
+  .oa .shock table th,.oa .shock table td{border:1px solid var(--line2);padding:7px 10px;text-align:left}
+  .oa .shock table th{background:#F8FAFC;font-weight:800;color:var(--s800);white-space:nowrap}
+  .oa .shock table td.win{background:rgba(223,58,93,.06);font-weight:700;color:#B02A45}
+  .oa .shock table td.self{background:rgba(174,28,60,.04)}
   .oa .zone{display:grid;grid-template-columns:1fr 1fr;gap:16px}
   .oa .zc{border-radius:12px;padding:18px 20px;border:1px solid}
   .oa .zc.jam{background:rgba(175,70,29,.05);border-color:rgba(175,70,29,.28)}
@@ -132,6 +148,7 @@
   <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.5 2.3a.5.5 0 0 1 .9 0l2.3 4.7a2 2 0 0 0 1.6 1.1l5.2.8a.5.5 0 0 1 .3.9l-3.7 3.6a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.2-.8a2 2 0 0 0 1.6-1.1z"/></symbol>
   <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.8 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
   <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></symbol>
 </defs></svg>
 
 <div class="oa"><div class="shell"><div class="cols">
@@ -140,7 +157,9 @@
     <div class="logo"><span class="mk">O</span>EISHIN Optia Cloud</div>
     <nav>
       <a href="#scope" class="on"><svg class="ic"><use href="#i-users"/></svg>調査対象</a>
+      <a href="#found"><svg class="ic"><use href="#i-alert"/></svg>2つの重要な発見</a>
       <a href="#compare"><svg class="ic"><use href="#i-grid"/></svg>横並び比較</a>
+      <a href="#tier2"><svg class="ic"><use href="#i-users"/></svg>第2階層の5社</a>
       <a href="#map"><svg class="ic"><use href="#i-map"/></svg>訴求軸マップ</a>
       <a href="#position"><svg class="ic"><use href="#i-flag"/></svg>取れるポジション</a>
       <a href="#usp"><svg class="ic"><use href="#i-star"/></svg>USP仮説</a>
@@ -152,151 +171,185 @@
   <main>
 
     <div class="hero"><div class="blob1"></div><div class="blob2"></div><div class="in">
-      <div class="co"><svg class="ic" style="width:16px;height:16px;color:#64748B"><use href="#i-building"/></svg><b>株式会社サンスパック</b><span class="sep">|</span><span>採用競合分析（改訂版）</span></div>
-      <h1>同じ候補者を取り合う会社と、勝てる場所</h1>
-      <div class="sub">御社が意識されている実在企業を対象に、採用発信と会社全体の競争優位を二層で比較しました。結論として、狙うべき場所は前回の想定から変わります。</div>
+      <div class="co"><svg class="ic" style="width:16px;height:16px;color:#64748B"><use href="#i-building"/></svg><b>株式会社サンスパック</b><span class="sep">|</span><span>採用競合分析</span></div>
+      <h1>条件では勝てない。では、どこで勝つか。</h1>
+      <div class="sub">御社が意識されている下関市内4社を軸に、採用発信と経営実態を二層で調査しました。結論は明快です。狙う場所は条件ではありません。</div>
       <div class="chips">
-        <span class="chip">実名5社＋自社</span>
-        <span class="chip sec">採用発信＋経営実態の二層</span>
-        <span class="chip meta"><svg class="ic" style="width:14px;height:14px"><use href="#i-cal"/></svg>2026.08 調査</span>
+        <span class="chip">優先4社＋自社</span>
+        <span class="chip sec">第2階層5社</span>
+        <span class="chip meta"><svg class="ic" style="width:14px;height:14px"><use href="#i-cal"/></svg>2026.08.27 調査</span>
       </div>
     </div></div>
 
     <!-- 調査対象 -->
     <section id="scope">
-      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-users"/></svg></span><div><h2>調査対象</h2><div class="en">Scope</div></div><span class="tag">併願リアリティで選定</span></div>
-      <div class="notice">採用競合は「同じ候補者を取り合う相手」です。御社に挙げていただいた企業から、<b>下関の地元志向の候補者が現実に同時に検討しうる会社</b>を優先し、深掘り対象を絞りました。全国転勤が前提の大手は、同じ土俵にいないため対象外としています。</div>
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-users"/></svg></span><div><h2>調査対象</h2><div class="en">Scope</div></div><span class="tag">御社の実名リストから</span></div>
+      <div class="notice">御社が「採用面も含めて意識している」と挙げられた市内4社を<b>主軸</b>に、県内5社を<b>第2階層</b>として調査しました。全国転勤が前提の大手は、地元志向の候補者が現実に併願しないため対象外としています。</div>
       <div class="tgg">
-        <div class="tgc s"><div class="ty">自社・基準</div><h4>サンスパック</h4><div class="sz">32名／下関市田中町</div><p>法面保護・交通安全施設・橋梁補修。差分抽出のため同じ項目で調査</p></div>
-        <div class="tgc d"><div class="ty">直接競合・最大</div><h4>住吉工業</h4><div class="sz">161名（G269名）／下関市長府</div><p>売上63億（G103.5億）。土木＋建築＋ダム・トンネル・水道。国交大臣許可24業種</p></div>
-        <div class="tgc d"><div class="ty">直接競合・事業一致</div><h4>ミカド交設</h4><div class="sz">20名／下関市上田中町</div><p>法面保護・交通安全施設・構造物メンテ。<b>事業と発注者がほぼ完全一致</b></p></div>
-        <div class="tgc d"><div class="ty">直接競合・採用巧者</div><h4>コプロス</h4><div class="sz">下関市長府</div><p>マイナビPV山口1位。「世界の環境を創造」「超一流になる覚悟はあるか」</p></div>
-        <div class="tgc d"><div class="ty">直接競合・県内</div><h4>大栄建設</h4><div class="sz">宇部市</div><p>昭和2年創業。新卒6年で16名・定着率100%を訴求</p></div>
-        <div class="tgc v"><div class="ty">価値競合</div><h4>中国電力NW ほか</h4><div class="sz">山口NC／公務員</div><p>「地元で安定」の最右翼。アンケートで実際に比較された先</p></div>
+        <div class="tgc s"><div class="ty">自社・基準</div><h4>サンスパック</h4><div class="sz">32名／田中町（唐戸）</div><p>法面保護・交通安全施設・橋梁補修</p></div>
+        <div class="tgc d"><div class="ty">優先① 採用巧者</div><h4>コプロス</h4><div class="sz">長府</div><p>マイナビPV山口1位。SNS全運用。「超一流になる覚悟はあるか」</p></div>
+        <div class="tgc d"><div class="ty">優先② 最大規模</div><h4>住吉工業</h4><div class="sz">161名（G269名）／長府</div><p>売上63億。土木＋建築＋水道・ダム・トンネル。社員IV24本</p></div>
+        <div class="tgc d"><div class="ty">優先③ 条件が最強</div><h4>芝田建設</h4><div class="sz">43〜46名／豊浦町</div><p>売上13億台。休日127日・奨学金支援240万・大卒25万</p></div>
+        <div class="tgc d"><div class="ty">優先④ ICTで先行</div><h4>いのけん</h4><div class="sz">18〜21名／豊北町</div><p>売上5億。ICT施工を旗に。建設ディレクター職を募集中</p></div>
+        <div class="tgc" style="display:flex;align-items:center"><p style="font-size:11.5px;color:var(--muted)">第2階層：ミカド交設・大栄建設・澤田建設・サン・ロード・山口道路興業。<br>△の3社（井森工業・井原組・松下組）は今回未調査です。</p></div>
       </div>
-      <div class="notice" style="margin-top:14px;margin-bottom:0">簡易確認：芝田建設（豊浦）・いのけん（豊北）・山口道路興業（防府）・澤田建設（防府）・サン・ロード（山口市）。※<b>北九州エリアは御社も未把握</b>とのことでしたが、関門海峡を越えた通勤・Uターン圏として実際に競合しうるため、次フェーズでの調査をおすすめします。</div>
+    </section>
+
+    <!-- 発見 -->
+    <section id="found">
+      <div class="sh"><span class="chipico" style="background:rgba(223,58,93,.1);color:#B02A45"><svg class="ic"><use href="#i-alert"/></svg></span><div><h2>2つの重要な発見</h2><div class="en">Key Findings</div></div><span class="tag">結論が変わりました</span></div>
+
+      <div class="shock">
+        <div class="lb">発見 1</div>
+        <h3>条件面で、御社は市内で最上位ではありません</h3>
+        <p>芝田建設（豊浦町・43〜46名）が、<b>年間休日127日で同水準、奨学金返還支援は最大240万円（毎月1万円×最大20年）</b>を提示しています。御社の最大100万円（20万円×5年・下関市制度）を大きく上回ります。大卒初任給25万円、賞与年3回（新卒初年度3.2か月分）、資格取得は予備校費用まで全額会社負担。<b>条件を並べる勝負は、この時点で成立しません。</b></p>
+        <table>
+          <tr><th>項目</th><th>サンスパック</th><th>芝田建設</th><th>住吉工業</th></tr>
+          <tr><th>年間休日</th><td class="self">127日</td><td class="win">127日（R8）／126日（R9）</td><td class="win">127日</td></tr>
+          <tr><th>奨学金返還支援</th><td class="self">最大100万円</td><td class="win">最大240万円</td><td>あり（半額〜全額）</td></tr>
+          <tr><th>大卒初任給</th><td class="self">未開示</td><td class="win">250,000円</td><td>専門3年24万（建築）</td></tr>
+          <tr><th>賞与</th><td class="self">年2回＋報奨金</td><td class="win">年3回（初年度3.2か月）</td><td>年2回</td></tr>
+        </table>
+      </div>
+
+      <div class="shock">
+        <div class="lb">発見 2</div>
+        <h3>「建設ディレクター」は、すでに募集されています</h3>
+        <p>いのけん（豊北町・18〜21名）が<b>建設ディレクター職（現場事務・ICT業務／月給20〜30万・学歴不問）を求人票で募集中</b>です。さらに<b>ICT専用サイト</b>（「不可能を可能に。それが、「いのけん」のICT施工。」）を持ち、<b>Instagram（フォロワー1,660人・稼働中）のプロフィールに募集職種として建設ディレクターを明記</b>。中高生向けにICT施工体験のインターンシップも実施し、<b>ユースエール認定</b>も取得しています。</p>
+        <p>つまり<b>「DX・ICTで土木を変える」という旗は、すでに立てられています</b>。御社のUSPとして想定していた「新しい職域」は、単独では差別化になりません。ただし決定的な違いが1つあります。いのけんは<b>21名規模での個人の役割</b>、御社は<b>次世代開発部という組織機能として全現場のDXを担わせ、施工管理者を現場に専念させる構想</b>です。訴求するなら、この構造の差を語る必要があります。</p>
+      </div>
     </section>
 
     <!-- 比較 -->
     <section id="compare">
-      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-grid"/></svg></span><div><h2>横並び比較 ─ 採用発信と経営実態</h2><div class="en">Comparison</div></div><span class="tag">実測・出典あり</span></div>
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-grid"/></svg></span><div><h2>横並び比較（優先4社＋自社）</h2><div class="en">Comparison</div></div><span class="tag">実測・出典あり</span></div>
       <div class="tscroll">
         <table class="cmp">
           <thead><tr>
-            <th>項目</th><th class="self">サンスパック<span class="sub">自社</span></th><th>住吉工業<span class="sub">161名・下関</span></th><th>ミカド交設<span class="sub">20名・下関</span></th><th>コプロス<span class="sub">下関</span></th><th>大栄建設<span class="sub">宇部</span></th>
+            <th>項目</th><th class="self">サンスパック<span class="sub">32名・唐戸</span></th><th>コプロス<span class="sub">長府</span></th><th>住吉工業<span class="sub">161名・長府</span></th><th>芝田建設<span class="sub">43〜46名・豊浦</span></th><th>いのけん<span class="sub">18〜21名・豊北</span></th>
           </tr></thead>
           <tbody>
             <tr><th>採用<br>キャッチコピー</th>
-              <td class="self">「君の一歩が、常識を変える」<span class="sub">※理念「美しい土木へ」は採用サイトに未掲載</span></td>
-              <td>「君の挑戦は、形になる。」</td>
-              <td><b>「我らインフラキーパー」</b><span class="sub">山口を愛するフィールダーへ／ふるさとに必要な会社を一緒に作ろう！</span></td>
+              <td class="self">「君の一歩が、常識を変える」<span class="sub">理念「美しい土木へ」は採用サイトに未掲載</span></td>
               <td>「世界の環境を創造する」<span class="sub">超一流になる覚悟はあるか</span></td>
-              <td>「一緒に築こう、明日の街を。」</td></tr>
+              <td>「君の挑戦は、形になる。」</td>
+              <td><span class="mk r">なし</span><span class="sub">見出しは「採用情報」という機能名のみ</span></td>
+              <td>「新しい働き方を、私たちと一緒に」<span class="sub">ICT特設「不可能を可能に。」</span></td></tr>
             <tr><th>理念の<br>採用実装</th>
-              <td class="self"><span class="mk r">未実装</span><span class="sub">説明会では全文を語るがサイトに無い</span></td>
-              <td><span class="mk y">弱い</span><span class="sub">コピーは汎用的</span></td>
-              <td><span class="mk g">実装済</span><span class="sub">トップFV＝採用コピー。職種名も独自（フィールドマネージャー／クラフトマン）</span></td>
-              <td><span class="mk g">実装済</span><span class="sub">全チャネル統一</span></td>
-              <td><span class="mk y">部分</span></td></tr>
-            <tr><th>社員<br>インタビュー</th>
-              <td class="self"><span class="mk r">0本</span></td>
-              <td><span class="mk g">24本</span><span class="sub">住吉工業分9本</span></td>
-              <td><span class="mk r">0本</span></td>
-              <td><span class="mk g">多数</span></td>
-              <td><span class="mk g">あり</span><span class="sub">先輩の声・若手座談会</span></td></tr>
-            <tr><th>数字で見る<br>ページ</th>
-              <td class="self"><span class="mk r">なし</span><span class="sub">説明会資料には存在</span></td>
-              <td><span class="mk g">独立ページ</span><span class="sub">269名・平均45.9歳・勤続11.2年・保有資格290</span></td>
+              <td class="self"><span class="mk r">未実装</span><span class="sub">説明会では全文を語る</span></td>
+              <td><span class="mk g">実装済</span></td>
+              <td><span class="mk y">弱い</span><span class="sub">コピーが汎用的</span></td>
               <td><span class="mk r">なし</span></td>
-              <td><span class="mk g">あり</span></td>
-              <td><span class="mk y">媒体側のみ</span></td></tr>
+              <td><span class="mk g">実装済</span><span class="sub">ICTを全チャネルに貫通</span></td></tr>
+            <tr><th>年間休日</th>
+              <td class="self">127日</td><td>113日</td><td>127日<span class="sub">残業月8.0h</span></td>
+              <td><b>127日／126日</b><span class="sub">ノー残業デー週1</span></td>
+              <td>117日<span class="sub">サイトは110日と記載・要確認</span></td></tr>
+            <tr><th>大卒<br>初任給</th>
+              <td class="self">未開示</td><td>未確認</td><td>専門3年24万（建築）<span class="sub">大卒は未確認</span></td>
+              <td><b>250,000円</b><span class="sub">短大高専24万／高卒23万</span></td>
+              <td>240,000円<span class="sub">院26万／短大22万</span></td></tr>
+            <tr><th>奨学金<br>返還支援</th>
+              <td class="self">最大100万円<span class="sub">下関市制度・20万×5年</span></td>
+              <td>記載なし</td><td>あり<span class="sub">半額〜条件により全額</span></td>
+              <td><b>最大240万円</b><span class="sub">毎月1万円×最大20年</span></td>
+              <td>記載なし</td></tr>
             <tr><th>新卒採用<br>実績</th>
               <td class="self">2023年2名／2025年4名／2026年2名</td>
-              <td><b>2023年4名／2024年10名／2025年10名</b><span class="sub">定着率2025年100%</span></td>
-              <td><span class="mk r">新卒採用なし</span><span class="sub">中途のみ・高卒以上・経験不問</span></td>
               <td>大量採用<span class="sub">文理不問・文系8割</span></td>
-              <td>6年で16名</td></tr>
-            <tr><th>年間休日</th>
-              <td class="self">127日</td>
-              <td><b>127日</b><span class="sub">残業月平均8.0時間</span></td>
-              <td>120日<span class="sub">有給取得率90%超・10連休2回</span></td>
-              <td>113日</td>
-              <td>125日</td></tr>
-            <tr><th>奨学金<br>返還支援</th>
-              <td class="self">最大100万円<span class="sub">下関市制度</span></td>
-              <td><b>あり</b><span class="sub">半額〜条件により全額</span></td>
-              <td>記載なし</td>
-              <td>記載なし</td>
-              <td>記載なし</td></tr>
+              <td><b>2024年10名／2025年10名</b><span class="sub">定着率2025年100%</span></td>
+              <td>2026年予定5名<span class="sub">大卒2・高卒3／早稲田・九大・山大等</span></td>
+              <td>令和6年1名／令和7年1名<span class="sub">離職者0名</span></td></tr>
+            <tr><th>社員<br>インタビュー</th>
+              <td class="self"><span class="mk r">0本</span></td><td><span class="mk g">多数</span></td>
+              <td><span class="mk g">24本</span><span class="sub">住吉工業分9本</span></td>
+              <td><span class="mk y">1名</span><span class="sub">短文</span></td>
+              <td><span class="mk g">4本</span><span class="sub">入社年順・若手2名含む</span></td></tr>
             <tr><th>DX・ICT</th>
-              <td class="self"><b>専任部署を確立する方針</b><span class="sub">次世代開発部／建設ディレクター（令和4年始動）</span></td>
-              <td>DX推進・重機の遠隔操作実験<span class="sub">専任部署かは未確認</span></td>
-              <td>記載なし</td>
-              <td>記載なし</td>
-              <td>建設ディレクター職で募集</td></tr>
-            <tr><th>女性活躍</th>
-              <td class="self"><b>女性比率25%</b><span class="sub">20代女性施工管理2名／2027年4月に施工管理2名入社予定／やまぐち女性活躍推進（2026）</span></td>
-              <td>女性活躍ページあり<span class="sub">新卒2025年 女2/10名</span></td>
-              <td>「女性・若手社員大歓迎」<span class="sub">女性2名／21名</span></td>
+              <td class="self"><b>次世代開発部という組織</b><span class="sub">建設ディレクター（令和4年始動）／専任部署で全現場を担う構想／将来は新規事業</span></td>
               <td>未確認</td>
-              <td>未確認</td></tr>
-            <tr><th>事業領域<br>（2030年）</th>
-              <td class="self">土木＋<b>建築へ参入</b>＋水道・橋梁拡大<span class="sub">売上30億目標／国交省案件を十数年ぶり受注</span></td>
-              <td><b>既に建築・水道・ダム・トンネルを保有</b><span class="sub">広島支店・北九州</span></td>
-              <td>維持修繕に特化<span class="sub">国交省・県・市</span></td>
-              <td>メーカー型建設</td>
-              <td>土木・建築・設備</td></tr>
+              <td>DX推進・重機の遠隔操作実験<span class="sub">専任部署かは未確認</span></td>
+              <td><span class="mk r">記載なし</span></td>
+              <td><b>ICT特設サイト＋建設ディレクター募集中</b><span class="sub">ドローン測量・3次元設計・自動制御建機</span></td></tr>
+            <tr><th>女性活躍</th>
+              <td class="self"><b>比率25%／20代の女性施工管理2名</b><span class="sub">2027年4月に施工管理2名＋総務経理1名が入社予定</span></td>
+              <td>未確認</td>
+              <td>女性活躍ページあり<span class="sub">新卒2025年 女2/10名</span></td>
+              <td>男40名・女6名<span class="sub">約13%</span></td>
+              <td>男12名・女3名<span class="sub">役員・管理職の女性25%</span></td></tr>
             <tr><th>SNS採用</th>
               <td class="self"><span class="mk r">ほぼ無</span></td>
-              <td><span class="mk y">社長YouTube・FB</span><span class="sub">採用専用は無し</span></td>
-              <td><span class="mk y">卓球パークIG</span><span class="sub">529人・8ヶ月更新停止</span></td>
-              <td><span class="mk g">X/IG/TikTok/YT</span></td>
-              <td>IG 1本（197）</td></tr>
+              <td><span class="mk g">X／IG／TikTok／YT</span></td>
+              <td><span class="mk y">社長YouTube・FB</span><span class="sub">採用専用なし</span></td>
+              <td><span class="mk r">ゼロ</span><span class="sub">アカウント自体なし</span></td>
+              <td><span class="mk g">IG 1,660人・稼働中</span><span class="sub">YouTubeは約3年停止</span></td></tr>
             <tr><th>独自の<br>採用チャネル</th>
-              <td class="self">社長が全選考を1対1</td>
-              <td>グループ横断の採用サイト</td>
-              <td><b>社内に卓球場（8台）</b><span class="sub">従業員の約1/3が卓球経由で入社</span></td>
+              <td class="self"><b>社長が全選考を1対1</b><span class="sub">32名規模だからできる</span></td>
               <td>SNS総動員</td>
-              <td>若手座談会</td></tr>
+              <td>グループ横断の採用サイト</td>
+              <td>条件の厚み<span class="sub">食事補助・通勤48万・住宅12万</span></td>
+              <td><b>中高生インターン＋ユースエール認定</b></td></tr>
+            <tr><th>成熟度</th>
+              <td class="self"><span class="mk y">○</span> 二層分裂</td>
+              <td><span class="mk g">◎</span></td>
+              <td><span class="mk g">○</span>（◎手前）</td>
+              <td><span class="mk y">○</span>（下寄り）<span class="sub">条件は厚いが言い方がない</span></td>
+              <td><span class="mk g">○</span>（上寄り）<span class="sub">規模21名で異例に整う</span></td></tr>
           </tbody>
         </table>
+      </div>
+    </section>
+
+    <!-- 第2階層 -->
+    <section id="tier2">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-users"/></svg></span><div><h2>第2階層の5社</h2><div class="en">Second Tier</div></div><span class="tag">県内・要点のみ</span></div>
+      <div class="notice">通勤圏が下関から外れるため併願度は下がりますが、事業ドメインが近い社が複数あります。<b>山口道路興業とサン・ロードは、御社の中核事業（交通安全施設・法面）と重なります。</b></div>
+      <div class="tier2">
+        <div class="t2"><h4>ミカド交設</h4><div class="sz">20名／下関市上田中町</div><p><b>事業がほぼ完全一致</b>（法面保護・交通安全施設・構造物メンテ、発注者も国交省/県/市）。理念「我らインフラキーパー」を採用サイトのトップに実装済み。社内に卓球場8台を設置し<b>従業員の約1/3が卓球経由で入社</b>。年間休日120日。社員インタビュー0本</p></div>
+        <div class="t2"><h4>澤田建設</h4><div class="sz">79〜85名／防府市</div><p>売上60.8億。<b>県内で最も採用を設計している</b>（社員IV4名・2027卒募集・大卒初任給23万・賞与8か月・健康経営6年連続・遠隔臨場とドローン3D測量）。年間休日120日。成熟度◎</p></div>
+        <div class="t2"><h4>山口道路興業</h4><div class="sz">40名／防府市</div><p><b>交通安全施設・法面・舗装が主力＝事業が近い</b>。ただし<b>採用ページは現在クローズ</b>（「募集は締め切りました」）。2024年11月に外国人特定技能2名を採用。SNS4媒体を統一ブランドで保有。脅威度は現時点で低い</p></div>
+        <div class="t2"><h4>サン・ロード</h4><div class="sz">49名／山口市</div><p><b>維持補修専業型</b>（コンクリート補修・ウォータージェット・法面・交通安全）。年間休日112日・賞与年3回・転勤なし。社員IV4名。新卒枠はなく学歴不問の通年募集</p></div>
+        <div class="t2"><h4>大栄建設</h4><div class="sz">宇部市</div><p>昭和2年創業。土木・建築・設備。年間休日125日。<b>新卒6年で16名・定着率100%</b>を訴求。先輩の声・若手座談会あり。建設ディレクター職でも募集</p></div>
+        <div class="t2" style="background:#F8FAFC"><h4 style="color:var(--muted)">未調査</h4><div class="sz">△の3社</div><p>井森工業（柳井）・井原組（山口市徳地）・松下組（熊本芦北）。優先度が低い扱いだったため今回は対象外。必要なら追加調査します。<br><b>北九州エリア</b>も御社未把握とのことでしたが、関門海峡を越えたUターン圏として実際に競合しうるため、次フェーズでの調査を推奨します</p></div>
       </div>
     </section>
     <!-- 訴求軸マップ -->
     <section id="map">
       <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-map"/></svg></span><div><h2>訴求軸マップ ─ 混雑と空白</h2><div class="en">Appeal Map</div></div></div>
       <div class="alert">
-        <h3>重要な発見：条件面の優位は、すでに存在しません</h3>
-        <p>今回の調査で明確になったのは、<b>年間休日127日は住吉工業と完全に同じ</b>、<b>奨学金返還支援も住吉工業が実施している</b>（しかも半額〜条件により全額）という事実です。さらに住吉工業は残業月平均8.0時間、新卒は年10名採用・定着率100%、社員インタビュー24本と数字ページを備えた採用サイトを持っています。<b>同じ下関で、規模5倍・新卒採用2.5倍の会社が、条件でも発信でも先に行っている</b>——これが現実の競争環境です。条件を並べる勝負は成立しません。</p>
+        <h3>下関市内の同業は、主要な訴求をすでに分け合っています</h3>
+        <p><b>条件は芝田建設と住吉工業が押さえ、ICT・DXはいのけんが押さえ、採用発信の物量はコプロスが押さえています。</b>つまり「休日が多い」「資格支援が手厚い」「DXをやっている」はいずれも、御社が言っても比較で埋もれます。残っているのは、どの社も手を付けていない<b>価値観の軸</b>です。</p>
       </div>
       <div class="zone">
         <div class="zc jam">
-          <h4>混雑ゾーン（主役にしても差がつかない）</h4>
-          <p class="lead">複数社が同等以上を提示済み。ここを前面に出すと比較負けします。</p>
+          <h4>混雑ゾーン（主役にすると比較で負ける）</h4>
+          <p class="lead">同等以上を提示している社が市内に存在します。</p>
           <ul>
-            <li><b>年間休日</b>：サンスパック127日＝住吉工業127日。大栄125日</li>
-            <li><b>奨学金返還支援</b>：住吉工業も実施（半額〜全額）</li>
-            <li><b>資格取得支援</b>：住吉工業は全額負担＋専門学校受講費補助。ミカド交設は半額助成。全社完備</li>
-            <li><b>転勤なし・地元</b>：ミカド交設・大栄建設も同条件。中電も中国5県で地元を主張</li>
-            <li><b>未経験歓迎</b>：全社が明記</li>
-            <li><b>安定性（公共工事）</b>：ミカド交設は国交省・県・市で発注者構成が同じ。住吉工業は規模で圧倒</li>
+            <li><b>年間休日</b>：127日は芝田建設・住吉工業と同水準。差になりません</li>
+            <li><b>奨学金返還支援</b>：芝田建設が最大240万円。<b>御社の100万円では比較負けします</b></li>
+            <li><b>資格取得支援</b>：芝田建設は予備校費用まで全額。住吉工業も全額＋専門学校補助。全社完備</li>
+            <li><b>ICT・DX・建設ディレクター</b>：いのけんが職種として募集中＋ICT専用サイト＋SNSで発信済み</li>
+            <li><b>初任給</b>：芝田建設25万・いのけん24万。御社は未開示のため、開示しないままでは比較の土俵に乗れません</li>
+            <li><b>未経験歓迎・転勤なし・公共工事で安定</b>：全社が明記</li>
+            <li><b>採用サイトの物量</b>：住吉工業24本・コプロス多数。本数では追いつけません</li>
           </ul>
         </div>
         <div class="zc gap">
-          <h4>空白ゾーン（サンスパックだけが取れる）</h4>
-          <p class="lead">競合が持っていない、かつ御社に実弾があるもの。</p>
+          <h4>空白ゾーン（御社だけが取れる）</h4>
+          <p class="lead">どの社も手を付けておらず、かつ御社に実弾があるもの。</p>
           <ul>
-            <li><b>理念 × 人 × 未来の3点セット</b>：ミカド交設は理念があるが社員インタビュー0本・新卒採用なし。住吉工業は人（24本）があるが理念が汎用的。<b>3つ揃えられるのは御社だけ</b></li>
-            <li><b>女性の施工管理という実績</b>：20代の女性施工管理2名＋2027年4月に2名入社。同業で女性の施工管理を具体的な人数で語れる会社は他にない</li>
-            <li><b>DX専任部署が現場の書類を引き受ける構造</b>：住吉工業もDXは推進するが「専任部署が全現場を担う」構造は見えない。ミカド交設は記載なし</li>
-            <li><b>これから建築・水道へ広がる会社という物語</b>：住吉工業は既に到達済みで物語にならない。<b>御社は今から変わる会社＝候補者が成長に立ち会える</b></li>
+            <li><b>「美しさ」という価値観の軸</b>：市内5社の旗は「超一流」「挑戦」「ICT」「なし」。<b>人としてどうあるべきかを旗にした会社は一社もありません</b>。理念・一次資料・7つのValueまで言語化済みなのは御社だけ</li>
+            <li><b>女性の施工管理を、人数で語れること</b>：20代の女性施工管理2名＋2027年4月に施工管理2名が入社予定。他社は女性比率のみで、<b>施工管理職の女性を具体的な人数で示せる社はありません</b></li>
+            <li><b>社長が全選考を1対1で担う体験</b>：住吉工業161名・コプロス大量採用では構造的に不可能。<b>32名規模だからできる</b>ことが、そのまま差別化になります</li>
+            <li><b>DXを「組織機能」として語ること</b>：いのけんは21名規模での個人の役割。御社は次世代開発部という部署が全現場を担い、施工管理者を現場に専念させる構造。<b>ここは語り方で差がつきます</b></li>
+            <li><b>変わる途中であること</b>：住吉工業は既に建築・水道まで到達済みで物語になりません。御社は理念刷新・規程改定・建築参入・国交省案件が同時に進む局面</li>
           </ul>
         </div>
       </div>
       <div class="matrix">
-        <div class="mx"><div class="n">住吉工業に勝てない場所</div><div class="r">規模・売上・待遇レンジ・新卒採用数・採用サイトの物量。<b>ここでは戦わない</b></div></div>
-        <div class="mx"><div class="n">ミカド交設に注意すべき場所</div><div class="r">理念の言語化。「我らインフラキーパー」は「美しい土木へ」と同じ構造で、<b>先に採用サイトへ実装されている</b></div></div>
-        <div class="mx win"><div class="n">サンスパックが勝てる場所</div><div class="r"><b>理念を"人"と"未来"で証明すること</b>。哲学・女性の実績・DX構想・2030年の成長。この4点が揃うのは御社だけ</div></div>
+        <div class="mx"><div class="n">戦ってはいけない相手と場所</div><div class="r"><b>芝田建設 × 条件</b>（奨学金240万・初任給25万・賞与年3回）／<b>住吉工業 × 規模と物量</b>（161名・売上63億・IV24本）</div></div>
+        <div class="mx"><div class="n">先を越されている場所</div><div class="r"><b>いのけん × ICT・建設ディレクター</b>。旗としては使えません。<b>組織構造の違いとして語り直す</b>必要があります</div></div>
+        <div class="mx win"><div class="n">御社だけが取れる場所</div><div class="r"><b>「美しさ」＝人としてどうあるべきかという価値観</b>。加えて<b>女性の施工管理の実数</b>と<b>社長との1対1</b>。この3つは市内のどの社も持っていません</div></div>
       </div>
     </section>
 
@@ -304,10 +357,11 @@
     <section id="position">
       <div class="sh"><span class="chipico" style="background:rgba(29,60,175,.1);color:var(--info)"><svg class="ic"><use href="#i-flag"/></svg></span><div><h2>サンスパックが取れるポジション</h2><div class="en">Positioning</div></div></div>
       <div class="pos">
-        <h3>「これから変わる会社の、最初の世代になれる」</h3>
-        <p>下関の同業3社は、それぞれ違う旗を立てています。<b>住吉工業＝規模と安定（すでに完成した会社）</b>、<b>ミカド交設＝ふるさとを守る使命（維持修繕に特化）</b>、<b>コプロス＝世界と超一流（上昇志向）</b>。この3つの間に、まだ誰も取っていない場所があります。</p>
-        <p>それが<b>「変わる途中の会社」</b>というポジションです。2025年に理念を掲げ直し、2026年に規程を全面刷新し、DX専任部署をこれから確立し、建築と水道へ広がり、国交省案件を十数年ぶりに受注した——<b>いま御社は明確に変化の途上にあります</b>。完成した会社に入るのではなく、<b>変わっていく会社の最初の世代になる</b>。これは住吉工業（完成済み）にもミカド交設（特化型）にも言えません。</p>
-        <p>そして、この物語の説得力を担保するのが<b>「美しい土木へ」という哲学</b>です。ただし条件は一つあります。<b>哲学は、人の顔と具体的な仕事で証明されないと、ただの標語になります</b>。ミカド交設が理念を掲げながら社員インタビュー0本であることが、その証拠です。御社が勝つ条件は、<b>哲学を"誰が""何をして"証明するかまで見せること</b>——ここに尽きます。</p>
+        <h3>条件でも技術でもなく、「人として、どう仕事をするか」で選ばれる会社になる。</h3>
+        <p>下関市内4社の旗を並べると、空いている場所がはっきりします。<b>コプロス＝超一流・世界（上昇志向）</b>、<b>住吉工業＝挑戦が形になる（規模と安定）</b>、<b>いのけん＝ICTで新しい働き方（技術革新）</b>、<b>芝田建設＝旗がなく条件のみ</b>。</p>
+        <p>この4つに共通して<b>抜けているのは「人の資質」への言及</b>です。どの社も「何ができるか」「どんな環境か」を語っていますが、<b>「どういう人であってほしいか」を旗にした会社は一社もありません</b>。そして御社には、理念「美しい土木へ」、社長の一次資料（美は細部に宿る）、7つのValueという形で、<b>すでにそれが言語化されています</b>。使われていないだけです。</p>
+        <p>そのうえで、実弾がこの旗を裏づけます。<b>丁寧さを金額で示す表彰制度</b>（優良工事15万円/件・技術者表彰10万円）、<b>女性の施工管理2名＋2027年に2名</b>、<b>社長が全選考を1対1で担う選考体験</b>。条件の比較表では負けますが、<b>「誰と、どう働くか」の比較では負けません</b>。</p>
+        <p style="margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:12.5px;color:var(--muted)">なお現実的な補足として、条件は「勝つため」ではなく<b>「土俵から落ちないため」</b>に必要です。初任給が未開示のままでは芝田建設25万・いのけん24万と並べられず、比較の対象にすら入りません。<b>開示は必須、ただし主役にはしない</b>——これが条件の扱い方です。</p>
       </div>
     </section>
 
@@ -315,41 +369,43 @@
     <section id="usp">
       <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-star"/></svg></span><div><h2>USP仮説 3案</h2><div class="en">USP Hypotheses</div></div></div>
       <div class="usp"><div class="no">1</div><div>
-        <h4>変わる途中の会社に、最初から関われる</h4>
-        <p>2025年の理念刷新、2026年の規程全面改定、DX専任部署の確立、建築・水道への拡大、国交省案件の受注。<b>これらを「会社が変わっていく実況」として見せる</b>。完成した会社を選ぶのではなく、変える側に立てるという訴求は、住吉工業にもミカド交設にも出せません。</p>
-        <p class="ev">実弾：中期経営計画（2026-2030）／売上30億目標／建築5〜10億／国交省案件を十数年ぶり受注</p>
+        <h4>丁寧さを、いちばん高く評価する会社</h4>
+        <p>市内4社の誰も「人の資質」を旗にしていません。理念「美は細部に宿る」を採用の言葉に翻訳し、<b>丁寧な仕事が金額と評価で報われることを示す</b>。条件の比較から降りて、価値観の比較に土俵を移す打ち手です。</p>
+        <p class="ev">実弾：優良工事表彰15万円/件・技術者表彰10万円・災害功労10万円／ISO三種の運用／理念の一次資料とValue7項目</p>
       </div></div>
       <div class="usp"><div class="no">2</div><div>
         <h4>女性が施工管理として現場を任される会社</h4>
-        <p>女性比率25%、20代の女性施工管理2名、2027年4月にさらに施工管理2名が入社予定。<b>「女性活躍」を制度ではなく人数と職種で語れる</b>のは、地場同業でほぼ唯一です。会社説明会で既に「むしろ女性の方が向いています」と語っている強みを、そのまま外に出す形になります。</p>
-        <p class="ev">実弾：やまぐち女性の活躍推進事業者（2026認定）→えるぼし認定へ／産育休の取得・復帰実績</p>
+        <p>市内で<b>施工管理職の女性を人数で語れるのは御社だけ</b>です。20代の女性施工管理2名、2027年4月にさらに施工管理2名が入社予定。他社は女性比率の記載にとどまります。会社説明会で既に「むしろ女性の方が向いています」と語っている強みを、そのまま外に出す形になります。</p>
+        <p class="ev">実弾：女性比率25%／やまぐち女性の活躍推進事業者（2026認定）→えるぼし認定へ／産育休の取得・復帰実績</p>
       </div></div>
       <div class="usp"><div class="no">3</div><div>
-        <h4>書類は専任部署が引き受け、施工管理は現場に集中する</h4>
-        <p>建設業の施工管理が抱える最大の不満（書類・事務作業に時間を奪われる）に対し、<b>「DX専任部署が全現場を担当する」という組織的な解決策</b>を提示できます。とくに経験者採用で効きます。同業の求人でここまで踏み込んだ提示は確認できませんでした。</p>
-        <p class="ev">実弾：次世代開発部の組織図／建設ディレクター（令和4年始動）／ICT測量の実施</p>
+        <h4>社長が全選考を1対1で担う選考体験</h4>
+        <p>アンケートで8名中7名が印象に残したのがこれです。<b>住吉工業161名・コプロス大量採用では構造的に不可能</b>であり、32名規模だからこそ成立します。「会社の規模が小さいこと」を弱みではなく<b>候補者一人に向き合える理由</b>に反転させる打ち手です。</p>
+        <p class="ev">実弾：会社説明会から最終面接まで社長が単独対応／不安を伝える前に解決策を用意／選考が速く丁寧（現場アンケートの実データ）</p>
       </div></div>
+      <div class="notice" style="margin-top:16px;margin-bottom:0"><b>前回案からの変更：</b>「DX専任部署が書類を引き受ける」を単独のUSPから外しました。いのけんが建設ディレクター職を募集済みで、単独では差別化にならないためです。ただし<b>経験者施工管理向けの訴求としては依然有効</b>なので、区分別のメッセージとして残します（組織機能として語る形に）。</div>
     </section>
 
     <!-- 接続 -->
     <section id="connect">
       <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-link"/></svg></span><div><h2>提案への接続</h2><div class="en">Connection</div></div></div>
       <div class="conn">
-        <div class="cn c1"><div class="k">上流設計</div><h4>採用コンセプト</h4><p>「美しい土木へ」を採用の言葉に翻訳する。ミカド交設が先に理念を実装しているため、<b>抽象的な使命の言い換えでは差がつかない</b>。哲学＋人＋未来の3点で組む。</p></div>
-        <div class="cn c2"><div class="k">制作</div><h4>採用サイト・LP</h4><p>社員インタビューと現場写真が最優先。<b>住吉工業24本という現実</b>を踏まえ、本数で競うのではなく「女性の施工管理」「建設ディレクター」という他社にない登場人物で差をつける。</p></div>
-        <div class="cn c3"><div class="k">WEB広告</div><h4>広告×専用LP</h4><p>コプロス以外はSNS・広告面が手薄。<b>混雑した条件訴求を避け、女性 × 施工管理／未経験 × DXという狭いが空いている入口</b>を狙い撃つ。</p></div>
+        <div class="cn c1"><div class="k">上流設計</div><h4>採用コンセプト</h4><p>「美しい土木へ」を採用の言葉に翻訳する。この調査結果は<b>約束A（仕事の質に報いる）を強く支持</b>します。一方、約束C（業界の当たり前を変える）はいのけんの先行により弱まりました。</p></div>
+        <div class="cn c2"><div class="k">制作</div><h4>採用サイト・LP</h4><p>本数では住吉工業24本に勝てません。<b>登場人物で差をつける</b>——女性施工管理、社長との1対1、丁寧な仕事の細部。芝田建設はSNSゼロ・コンセプトなしなので、そこは先行できます。</p></div>
+        <div class="cn c3"><div class="k">WEB広告</div><h4>広告×専用LP</h4><p>芝田建設はSNSアカウント自体がなく、山口道路興業は募集停止中。<b>コプロス以外は広告面が手薄</b>です。「女性 × 施工管理」という狭いが空いた入口を狙い撃ちます。</p></div>
       </div>
     </section>
 
     <!-- 出典 -->
     <section id="src">
-      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-doc"/></svg></span><div><h2>出典</h2><div class="en">Sources</div></div><span class="tag">取得 2026-08-25</span></div>
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-doc"/></svg></span><div><h2>出典</h2><div class="en">Sources</div></div><span class="tag">取得 2026-08-27</span></div>
       <div class="card"><div class="src">
-        <p><b>住吉工業：</b>kogyo.smgp.co.jp（会社概要）／smgp.co.jp/recruit・/about-numbers（数字で見る）／マイナビ2027 corp223538／マイナビ転職 408932／やま建Navi 3891／キャリアマップ／ハローワーク</p>
-        <p><b>ミカド交設：</b>mikado-kousetsu.jp（/home・/recruit-message・/recruit-engineers・/recruit-craftman・/company-strength）／やま建Navi 4369／TSSテレビ新広島「そ〜だったのかンパニー」／mikadottp.com／Instagram @mikado.t.t.park</p>
-        <p><b>コプロス：</b>copros.co.jp/recruit／マイナビ2027 corp204804　<b>大栄建設：</b>daiei-c.jp/recruitment／マイナビ2027 corp242415　<b>中国電力NW：</b>energia.co.jp/nw</p>
-        <p><b>サンスパック：</b>recruit-sunspac.jp／sunspac.com／会社説明会資料（2026.06.08）／中期経営計画書（2026年1月）／追加ヒアリング回答（2026.08）／社員名簿・規程集</p>
-        <p style="margin-top:9px;color:#94A3B8">注記：住吉工業の設立年は公式サイト表記（昭和31年）を採用（やま建Naviは昭和34年と記載）。同名の別法人（名古屋の大栄建設・大阪の友田組・福岡のコプロコンストラクション・杉並区のミカドスポーツ）は所在地で照合し除外。数値は概数および取得日時点の公開情報。未確認項目：住吉工業の大卒初任給・公共工事比率、ミカド交設の求人媒体展開。</p>
+        <p><b>芝田建設：</b>shibata3000.com（会社概要／採用ページ＝初任給・年間休日127日・賞与年3回・奨学金返還支援240万・社員の声）／マイナビ2027・2028（corp274834）／やま建Navi 2156／山口県 女性活躍推進事業者紹介</p>
+        <p><b>いのけん：</b>inoken.jp（会社情報／採用ページ＝先輩社員4本・FVコピー）／ict.inoken.jp（ICT特設サイト）／ハローワーク求人票PDF（35020-46668・45768ほか＝初任給・年間休日117日・青少年雇用情報・新卒実績）／やま建Navi 993＋インターンシップ1020／Instagram @inoken1953（1,660人）／ジョブドラフト／やまぐち企業図鑑ネクスタ</p>
+        <p><b>住吉工業：</b>kogyo.smgp.co.jp／smgp.co.jp/recruit・/about-numbers／マイナビ2027 corp223538／マイナビ転職 408932／やま建Navi 3891　<b>コプロス：</b>copros.co.jp/recruit／マイナビ2027 corp204804</p>
+        <p><b>第2階層：</b>ミカド交設 mikado-kousetsu.jp・やま建Navi 4369・TSSテレビ新広島／澤田建設 sawata.com・やま建Navi 1405／サン・ロード sunroad-group.co.jp・やま建Navi／山口道路興業 y-d-k.co.jp・NJSS／大栄建設 daiei-c.jp</p>
+        <p><b>サンスパック：</b>recruit-sunspac.jp／sunspac.com／会社説明会資料（2026.06.08）／中期経営計画書（2026年1月）／追加ヒアリング回答（2026.08）／社員名簿・規程集・採用実績</p>
+        <p style="margin-top:9px;color:#94A3B8">注記：同名の別法人（下関の井上建設＝住宅会社／大阪のＩＮＯＫＥＮ／名古屋の大栄建設／芝田化工設計）は所在地で照合し除外。数値は取得日時点の公開情報および概数。<b>未確認：</b>芝田建設のSNS（発見できず）・発注者内訳、いのけんの年間休日（求人票117日とサイト110日で不一致・要確認）、住吉工業の大卒初任給、山口道路興業の条件全般（採用ページ非公開）。</p>
       </div></div>
     </section>
 
@@ -367,5 +423,6 @@
   secs.forEach(function(s){obs.observe(s)});
 })();
 </script>
+
 </body>
 </html>

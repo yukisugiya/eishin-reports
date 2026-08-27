@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>採用ペルソナ設計（区分別）｜株式会社サンスパック</title>
+</head>
+<body>
+<style>
+  .oa{
+    --bg:#F8FAFC; --card:#fff; --line:#E2E8F0; --line2:#F1F5F9;
+    --muted:#64748B; --s600:#475569; --s700:#334155; --s800:#1E293B;
+    --primary:#AE1C3C; --p10:rgba(174,28,60,.10); --p20:rgba(174,28,60,.22);
+    --pink:#E2506F; --teal:#1DAF90; --info:#1D3CAF; --success:#3CAF1D; --warning:#AF461D; --caution:#DBB424;
+    background:var(--bg); color:var(--s700); min-height:100vh; display:block; padding-bottom:40px;
+    font-family:-apple-system,'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Meiryo',sans-serif;
+    font-size:14px; line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .oa *{box-sizing:border-box}
+  .oa h1,.oa h2,.oa h3,.oa h4,.oa p,.oa ul,.oa li,.oa dl,.oa table{margin:0;padding:0}
+  .oa ul{list-style:none}
+  .oa .ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .oa .shell{max-width:1120px;margin:0 auto;padding:0 20px}
+  .oa .cols{display:flex;flex-direction:column;gap:28px;padding-top:28px}
+  @media(min-width:1024px){.oa .cols{flex-direction:row}}
+  .oa aside{display:none}
+  @media(min-width:1024px){.oa aside{display:block;width:236px;flex:none}}
+  .oa .side-sticky{position:sticky;top:28px}
+  .oa .logo{font-weight:800;color:var(--s800);font-size:15px;margin-bottom:22px;display:flex;align-items:center;gap:8px}
+  .oa .logo .mk{width:22px;height:22px;border-radius:6px;background:var(--primary);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:800}
+  .oa nav a{display:flex;align-items:center;gap:11px;border-radius:9px;padding:10px 13px;font-size:13px;font-weight:600;color:var(--s600);text-decoration:none;transition:all .15s}
+  .oa nav a:hover{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .oa nav a.on{background:var(--p10);color:var(--primary)}
+  .oa main{min-width:0;flex:1;display:flex;flex-direction:column;gap:30px}
+  .oa .hero{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:linear-gradient(135deg,#F8FAFC,#fff 55%,rgba(29,60,175,.05));padding:30px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+  .oa .hero .blob1{position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;background:radial-gradient(closest-side,rgba(226,80,111,.12),transparent);filter:blur(8px)}
+  .oa .hero .blob2{position:absolute;left:-60px;bottom:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(closest-side,rgba(29,60,175,.12),transparent);filter:blur(8px)}
+  .oa .hero .in{position:relative;z-index:1}
+  .oa .hero .co{display:flex;align-items:center;gap:8px;margin-bottom:14px;color:var(--muted);font-size:13.5px;flex-wrap:wrap}
+  .oa .hero .co b{color:var(--s600);font-weight:700} .oa .hero .co .sep{color:#CBD5E1}
+  .oa .hero h1{font-size:22px;font-weight:800;color:var(--s800);line-height:1.45}
+  @media(min-width:768px){.oa .hero h1{font-size:25px}}
+  .oa .hero .sub{color:var(--muted);font-size:13.5px;margin-top:9px}
+  .oa .hero .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .oa .chip{border-radius:999px;font-size:12px;font-weight:700;padding:5px 13px;background:var(--p10);color:var(--primary);border:1px solid var(--p20)}
+  .oa .chip.sec{background:#F8FAFC;color:var(--s600);border-color:var(--line);font-weight:600}
+  .oa .chip.meta{background:transparent;border:none;color:#94A3B8;font-weight:500;padding:5px 0;display:flex;align-items:center;gap:6px}
+  .oa section{scroll-margin-top:24px}
+  .oa .sh{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line2);padding-bottom:12px;margin-bottom:20px}
+  .oa .sh .chipico{border-radius:10px;background:var(--p10);color:var(--primary);padding:8px;display:inline-flex}
+  .oa .sh .chipico .ic{width:20px;height:20px}
+  .oa .sh h2{font-size:19px;font-weight:800;color:var(--s800);line-height:1.4}
+  .oa .sh .en{font-size:11px;font-weight:700;letter-spacing:.14em;color:#94A3B8;text-transform:uppercase;margin-top:1px}
+  .oa .sh .tag{margin-left:auto;font-size:10.5px;font-weight:700;color:var(--muted);background:#F1F5F9;border:1px solid var(--line);border-radius:999px;padding:3px 10px;white-space:nowrap}
+  .oa .card{border-radius:12px;border:1px solid var(--line);background:var(--card);padding:22px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+  .oa .card+.card{margin-top:16px}
+  .oa .notice{border-radius:9px;background:#F1F5F9;border:1px dashed #CBD5E1;padding:12px 15px;font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+  .oa .notice b{color:var(--s700)}
+  .oa .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .oa .stat{border-radius:12px;border:1px solid var(--line);background:#fff;padding:15px;text-align:center;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .oa .stat .n{font-size:26px;font-weight:800;color:var(--primary);line-height:1.1}
+  .oa .stat .n .u{font-size:12.5px;color:var(--muted);font-weight:700}
+  .oa .stat .c{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.5}
+  .oa .foot{border-top:1px solid var(--line);margin-top:14px;padding:18px 0 0;text-align:center}
+  .oa .foot p{font-size:11px;letter-spacing:.12em;color:#94A3B8;font-weight:600}
+  .oa .grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:11px}
+  .oa .g5{border-radius:11px;border:1px solid var(--line);background:#fff;padding:13px 14px;box-shadow:0 1px 2px rgba(15,23,42,.04);border-top:3px solid var(--muted)}
+  .oa .g5.p1{border-top-color:var(--primary)} .oa .g5.p2{border-top-color:var(--info)} .oa .g5.p3{border-top-color:var(--muted)}
+  .oa .g5 .pr{font-size:9.5px;font-weight:800;letter-spacing:.04em;margin-bottom:5px}
+  .oa .g5.p1 .pr{color:var(--primary)} .oa .g5.p2 .pr{color:var(--info)} .oa .g5.p3 .pr{color:var(--muted)}
+  .oa .g5 h4{font-size:13px;font-weight:800;color:var(--s800);margin-bottom:5px;line-height:1.45}
+  .oa .g5 p{font-size:11px;color:var(--s600);line-height:1.6}
+  .oa .g5 .st{margin-top:7px;font-size:10px;font-weight:700;padding:2px 7px;border-radius:999px;display:inline-block}
+  .oa .g5 .st.ok{background:rgba(29,175,144,.12);color:#0F7A63}
+  .oa .g5 .st.ng{background:rgba(223,58,93,.1);color:#B02A45}
+
+  .oa .gapbox{border-radius:12px;background:linear-gradient(135deg,rgba(226,80,111,.05),#fff 60%,rgba(29,60,175,.05));border:1px solid var(--line);padding:20px 22px;margin-top:16px}
+  .oa .gapbox h3{font-size:16px;font-weight:800;color:var(--s800);margin-bottom:8px}
+  .oa .gapbox p{font-size:13px;color:var(--s700);line-height:1.8} .oa .gapbox p b{color:var(--primary)}
+
+  .oa .pc{border-radius:16px;border:1px solid var(--line);background:#fff;box-shadow:0 1px 3px rgba(15,23,42,.05);overflow:hidden}
+  .oa .pc+.pc{margin-top:20px}
+  .oa .pc-top{padding:20px 24px;display:flex;gap:15px;align-items:flex-start;border-bottom:1px solid var(--line2)}
+  .oa .pc-top.a{background:linear-gradient(135deg,rgba(174,28,60,.05),#fff 65%)}
+  .oa .pc-top.b{background:linear-gradient(135deg,rgba(29,60,175,.06),#fff 65%)}
+  .oa .pc-top.c{background:linear-gradient(135deg,rgba(29,175,144,.06),#fff 65%)}
+  .oa .av{width:48px;height:48px;border-radius:13px;flex:none;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:800;font-size:17px}
+  .oa .av.a{background:var(--primary)} .oa .av.b{background:var(--info)} .oa .av.c{background:var(--teal)}
+  .oa .pc-top .role{font-size:10.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin-bottom:3px}
+  .oa .pc-top.a .role{color:var(--primary)} .oa .pc-top.b .role{color:var(--info)} .oa .pc-top.c .role{color:var(--teal)}
+  .oa .pc-top h3{font-size:17px;font-weight:800;color:var(--s800);line-height:1.45}
+  .oa .pc-top .who{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.6}
+  .oa .pc-body{padding:20px 24px;display:flex;flex-direction:column;gap:17px}
+
+  .oa .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line2);border:1px solid var(--line2);border-radius:10px;overflow:hidden}
+  .oa .pgrid .f{background:#fff;padding:9px 12px}
+  .oa .pgrid .fl{font-size:10px;color:#94A3B8;font-weight:700;letter-spacing:.03em}
+  .oa .pgrid .fv{font-size:12px;color:var(--s800);font-weight:600;margin-top:2px;line-height:1.5}
+
+  .oa .blk h4{font-size:12px;font-weight:800;color:var(--s800);margin-bottom:8px;display:flex;align-items:center;gap:7px}
+  .oa .blk h4 .ic{width:14px;height:14px}
+  .oa .two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .oa .tags{display:flex;flex-wrap:wrap;gap:6px}
+  .oa .tg{font-size:11.5px;border-radius:7px;border:1px solid var(--line);background:#F8FAFC;color:var(--s700);padding:4px 10px}
+  .oa .tg.pos{background:rgba(29,60,175,.06);border-color:rgba(29,60,175,.25);color:#1D3CAF}
+  .oa .li{font-size:12px;color:var(--s600);padding:3px 0 3px 14px;position:relative;line-height:1.65}
+  .oa .li::before{content:"";position:absolute;left:3px;top:10px;width:4px;height:4px;border-radius:50%;background:var(--muted);opacity:.5}
+  .oa .li.t::before{background:var(--teal);opacity:.9} .oa .li.w::before{background:var(--warning);opacity:.9}
+  .oa .li b{color:var(--s800)}
+
+  .oa .catch{border-radius:12px;padding:16px 18px;background:linear-gradient(135deg,rgba(174,28,60,.06),#fff 65%);border:1px solid var(--p20)}
+  .oa .catch .cc{font-size:17px;font-weight:800;color:var(--primary);line-height:1.5;letter-spacing:-.01em}
+  .oa .catch .cs{font-size:11.5px;color:var(--muted);margin-top:4px}
+  .oa .spec{margin-top:11px;display:flex;flex-direction:column;gap:8px}
+  .oa .sp{background:#fff;border:1px solid var(--line);border-radius:9px;padding:10px 13px}
+  .oa .sp .sl{font-size:9.5px;font-weight:800;letter-spacing:.06em;color:var(--muted);text-transform:uppercase;display:block;margin-bottom:4px}
+  .oa .sp .sv{font-size:12.5px;color:var(--s800);font-weight:700;line-height:1.55}
+  .oa .sp .sv.n{font-weight:500;color:var(--s700);font-size:11.5px;margin-top:4px}
+
+  .oa .req{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+  .oa .rq{border-radius:10px;padding:13px 15px;border:1px solid}
+  .oa .rq.must{background:rgba(174,28,60,.04);border-color:var(--p20)} .oa .rq.must .t{color:var(--primary)}
+  .oa .rq.want{background:rgba(29,60,175,.04);border-color:rgba(29,60,175,.22)} .oa .rq.want .t{color:var(--info)}
+  .oa .rq.neg{background:rgba(223,58,93,.04);border-color:rgba(223,58,93,.22)} .oa .rq.neg .t{color:#B02A45}
+  .oa .rq .t{font-size:11px;font-weight:800;margin-bottom:7px}
+  .oa .rq li{font-size:11.5px;color:var(--s600);padding:2px 0 2px 13px;position:relative;line-height:1.55}
+  .oa .rq.must li::before{content:"◎";position:absolute;left:0;color:var(--primary);font-size:10px}
+  .oa .rq.want li::before{content:"○";position:absolute;left:0;color:var(--info);font-size:10px}
+  .oa .rq.neg li::before{content:"✕";position:absolute;left:0;color:#B02A45;font-size:10px}
+
+  .oa .src{font-size:11px;color:#94A3B8;background:#F8FAFC;border:1px dashed var(--line);border-radius:7px;padding:9px 12px;line-height:1.7}
+  .oa .src b{color:var(--s700)}
+  .oa .src.ev{background:rgba(29,175,144,.05);border-color:rgba(29,175,144,.3)}
+  .oa .notice{border-radius:9px;background:#F1F5F9;border:1px dashed #CBD5E1;padding:12px 15px;font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+  .oa .notice b{color:var(--s700)}
+  .oa .mini{border-radius:11px;border:1px solid var(--line);background:#fff;padding:15px 17px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .oa .mini+.mini{margin-top:12px}
+  .oa .mini h4{font-size:14px;font-weight:800;color:var(--s800);margin-bottom:6px}
+  .oa .mini .lead{font-size:12px;color:var(--muted);margin-bottom:8px;line-height:1.65}
+  @media(max-width:820px){.oa .grid5{grid-template-columns:1fr 1fr}}
+  @media(max-width:700px){
+    .oa .two,.oa .req{grid-template-columns:1fr}
+    .oa .pgrid{grid-template-columns:1fr 1fr}
+    .oa .grid5{grid-template-columns:1fr}
+  }
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4M12 17h.01"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-msg" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+</defs></svg>
+
+<div class="oa"><div class="shell"><div class="cols">
+
+  <aside><div class="side-sticky">
+    <div class="logo"><span class="mk">O</span>EISHIN Optia Cloud</div>
+    <nav>
+      <a href="#map" class="on"><svg class="ic"><use href="#i-grid"/></svg>5区分の全体像</a>
+      <a href="#p1"><svg class="ic"><use href="#i-user"/></svg>① 新卒施工管理</a>
+      <a href="#p2"><svg class="ic"><use href="#i-user"/></svg>② 経験者施工管理</a>
+      <a href="#p3"><svg class="ic"><use href="#i-user"/></svg>③ 建設ディレクター</a>
+      <a href="#p45"><svg class="ic"><use href="#i-route"/></svg>④⑤ 技能職・幹部候補</a>
+      <a href="#req"><svg class="ic"><use href="#i-alert"/></svg>採用要件（企業目線）</a>
+    </nav>
+  </div></aside>
+
+  <main>
+
+    <div class="hero"><div class="blob1"></div><div class="blob2"></div><div class="in">
+      <div class="co"><svg class="ic" style="width:16px;height:16px;color:#64748B"><use href="#i-building"/></svg><b>株式会社サンスパック</b><span class="sep">|</span><span>採用ペルソナ設計（区分別）</span></div>
+      <h1>誰を迎えるかを、区分ごとに決める</h1>
+      <div class="sub">2030年に必要な人材を5つの採用区分に分け、それぞれの人物像・訴求・キャッチコピーまで設計しました。次回、優先区分を確定させてください。</div>
+      <div class="chips">
+        <span class="chip">5区分</span>
+        <span class="chip sec">人物像＋訴求＋求人タイトル</span>
+        <span class="chip sec">採用要件は別ブロック</span>
+        <span class="chip meta"><svg class="ic" style="width:14px;height:14px"><use href="#i-cal"/></svg>2026.08 改訂版</span>
+      </div>
+    </div></div>
+
+    <!-- 全体像 -->
+    <section id="map">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-grid"/></svg></span><div><h2>5区分の全体像</h2><div class="en">Overview</div></div><span class="tag">次回ここを確定</span></div>
+      <div class="notice">区分が違えば、候補者が見ている市場も、比べている会社も、刺さる言葉も変わります。<b>だからペルソナは区分ごとに立てます。</b>下の「実績」は、いま実際に採れているかどうかです。</div>
+      <div class="grid5">
+        <div class="g5 p1"><div class="pr">最優先</div><h4>新卒<br>施工管理</h4><p>一級土木6名の代替を育てる本線。継続採用が前提条件</p><span class="st ok">勝ち筋あり</span></div>
+        <div class="g5 p1"><div class="pr">最優先</div><h4>経験者<br>施工管理</h4><p>新卒育成では2030年に間に合わない差分を埋める即戦力</p><span class="st ng">実績なし</span></div>
+        <div class="g5 p2"><div class="pr">戦略</div><h4>DX・ICT推進／<br>建設ディレクター</h4><p>全現場のDXを担う専任部署。将来は新規事業に</p><span class="st ng">これから</span></div>
+        <div class="g5 p3"><div class="pr">継続</div><h4>技能職<br>（工事班）</h4><p>自社施工と協力会社の両軸。地元人材に限定</p><span class="st ok">在籍あり</span></div>
+        <div class="g5 p2"><div class="pr">戦略</div><h4>将来の<br>幹部候補</h4><p>内部昇格・外部採用・M&amp;Aを同時並行</p><span class="st ng">要設計</span></div>
+      </div>
+      <div class="gapbox">
+        <h3>いま採れている人と、これから必要な人の「差分」</h3>
+        <p>実際に採れて定着しているのは<b>新卒施工管理だけ</b>です。ここは勝ち筋が確立しています。一方、2030年に必要な<b>経験者施工管理・建設ディレクター・幹部候補は、まだ採用の実績がありません</b>。つまりこの差分が、これから埋めるべき領域です。<br><br>そして重要なのは、<b>この3区分は「条件」では採れない</b>ということです。経験者は地元の同業から動く人が少なく、条件だけなら大手に負けます。建設ディレクターは職種そのものが世の中にまだ浸透していません。<b>会社の未来と、そこで任される役割を語れるかどうかで決まります。</b>だからこそ、採用ブランディングが必要になります。</p>
+      </div>
+    </section>
+
+    <!-- ① 新卒施工管理 -->
+    <section id="p1">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-user"/></svg></span><div><h2>① 新卒施工管理</h2><div class="en">New Graduate</div></div><span class="tag">最優先・詳細版</span></div>
+      <div class="pc">
+        <div class="pc-top a">
+          <div class="av a">1</div>
+          <div><div class="role">Primary Persona</div><h3>地元で腰を据えて、手に職をつけたい若手</h3><div class="who">下関・山口の大学／高専／高校卒。転勤したくない。派手な上昇志向ではないが、着実に伸びたい。社長や先輩との距離の近さで会社を決める。男女問わず。</div></div>
+        </div>
+        <div class="pc-body">
+          <div class="pgrid">
+            <div class="f"><div class="fl">年齢</div><div class="fv">22歳前後（20代前半）</div></div>
+            <div class="f"><div class="fl">性別</div><div class="fv">男女問わず（女性比率25%）</div></div>
+            <div class="f"><div class="fl">居住</div><div class="fv">下関・山口県内／実家または近居</div></div>
+            <div class="f"><div class="fl">学歴</div><div class="fv">地元の大学・高専・高校（文系含む）</div></div>
+            <div class="f"><div class="fl">経験</div><div class="fv">土木は未経験がほとんど</div></div>
+            <div class="f"><div class="fl">生活</div><div class="fv">休日は地元で家族・友人と。堅実</div></div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic" style="color:var(--info)"><use href="#i-search"/></svg>就活の軸（会社選びで比べた条件）</h4>
+            <div class="tags"><span class="tg pos">勤務地・転勤なし</span><span class="tg pos">休日・残業の少なさ</span><span class="tg">会社の安定性</span><span class="tg">一緒に働く人・社風</span><span class="tg">成長できる環境</span></div>
+            <p style="font-size:11.5px;color:var(--muted);margin-top:7px;line-height:1.65">※これは「判断基準」。下の価値観・動機（内面）とは別に扱います。</p>
+          </div>
+
+          <div class="two">
+            <div class="blk"><h4><svg class="ic" style="color:var(--teal)"><use href="#i-heart"/></svg>価値観・動機</h4>
+              <p class="li t">地元で長く働きたい。地域の役に立ちたい</p>
+              <p class="li t">形に残る仕事。完成したときの達成感</p>
+              <p class="li t">手に職をつけたい（国家資格）</p>
+              <p class="li t"><b>着実に伸びたい</b>（派手さより確実な成長）</p>
+            </div>
+            <div class="blk"><h4><svg class="ic" style="color:var(--warning)"><use href="#i-alert"/></svg>不安・ペインポイント</h4>
+              <p class="li w">外仕事の体力・天候（文化部出身の不安）</p>
+              <p class="li w">専門知識ゼロで通用するか</p>
+              <p class="li w">年上ばかりで意見を言いにくいのでは</p>
+              <p class="li w">給与が将来どこまで伸びるか見えない</p>
+            </div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic"><use href="#i-route"/></svg>キャリアの見通し（本人が知りたいこと）</h4>
+            <div class="two">
+              <div class="src" style="background:#F8FAFC">1年目から実務経験を積める（資格の実務年数も1年目から算入）→ <b>3年で2級</b></div>
+              <div class="src" style="background:#F8FAFC"><b>7年前後で一級</b>→ 自分の名前で仕事を取れる。報奨金・資格手当・昇給に接続</div>
+            </div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic"><use href="#i-search"/></svg>情報行動と意思決定</h4>
+            <p class="li"><b>情報源</b>：マイナビ中心、合同説明会、会社HP・採用サイト、大学のキャリアセンター、知人・社員紹介。SNSと口コミもある程度は見る</p>
+            <p class="li"><b>決め方</b>：応募数は少なめ（当社のみ〜5社）。地元中心で慎重。<b>社長・若手と会って、人柄と距離感で決める</b>。1対1で丁寧かつ速い選考に安心する</p>
+          </div>
+
+          <div class="blk"><h4><svg class="ic"><use href="#i-check"/></svg>訴求ポイント（競合の空白から選定）</h4>
+            <div class="two">
+              <div>
+                <p class="li t"><b>社長が全選考を一人で、1対1で</b>／不安を先回りして解決する選考体験</p>
+                <p class="li t"><b>20代の女性施工管理が2名在籍</b>＋2027年4月に2名入社＝同業で唯一、人数で語れる</p>
+                <p class="li t"><b>1年目から実務経験</b>＝資格の実務年数が入社日から積める</p>
+              </div>
+              <div>
+                <p class="li t"><b>メンター制度</b>（マンツーマン指導）＝「放任されない」証明</p>
+                <p class="li t"><b>変わる途中の会社に最初から関われる</b>（理念刷新・DX専任部署・建築参入・国交省案件）</p>
+                <p class="li t">年間休日127日・奨学金返還支援・転勤なし<br><span style="color:#B02A45;font-weight:600">※住吉工業も同条件。主役にせず要件として文末に添える</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catch">
+            <div class="cc">「ここで、ずっと。下関の道をつくる仕事。」</div>
+            <div class="cs">主語は候補者。会社の理念からではなく、本人の願い（地元で腰を据える）から起こしています。</div>
+            <div class="spec">
+              <div class="sp"><span class="sl">求人タイトル</span>
+                <div class="sv">施工管理／あなたが通ってきた下関の道を、これからはつくる側で。</div>
+                <div class="sv n">対案：「地元を出るつもりはなかった。だから、地元を仕上げる仕事を選んだ。」</div>
+                <div class="sv n">サブ（条件は文末）：未経験入社が大半・転勤なし／年間休日127日／資格取得費は会社負担／奨学金返還支援あり</div>
+              </div>
+              <div class="sp"><span class="sl">採用LP ファーストビュー</span>
+                <div class="sv">ここで、ずっと。下関の道をつくる仕事。</div>
+                <div class="sv n">リード：あなたが毎日通るあの道も、誰かが誠実に仕上げた仕事です。創業105年、下関のインフラを守るサンスパックで、手に職をつけませんか。</div>
+              </div>
+            </div>
+          </div>
+          <div class="src ev"><b>この人物像の根拠：</b>現場アンケート8名（うち施工管理・現場監督4名）。決め手＝休日・勤務地5名／社長の人柄3名／成長・挑戦3名。選考体験が印象に残ると7/8。活躍する人＝自分から動ける人7/8・コミュ力6/8。会社説明会資料・社員名簿。</div>
+        </div>
+      </div>
+    </section>
+    <!-- ② 経験者施工管理 -->
+    <section id="p2">
+      <div class="sh"><span class="chipico" style="background:rgba(29,60,175,.1);color:var(--info)"><svg class="ic"><use href="#i-user"/></svg></span><div><h2>② 経験者施工管理</h2><div class="en">Experienced</div></div><span class="tag">最優先・最難関</span></div>
+      <div class="notice"><b>2030年の一級土木6名を新卒育成だけで揃えるのは、計算上できません。</b>この区分が成立するかどうかが、5年後の受注量を左右します。同時に最も難しい区分です。</div>
+      <div class="pc">
+        <div class="pc-top b">
+          <div class="av b">2</div>
+          <div><div class="role">Secondary / Critical</div><h3>任され方に不満を持つ、30代前後の施工管理経験者</h3><div class="who">同業または近接業種で5〜10年の経験。2級または一級を保有。「現場は回せるが、書類に追われる」「この会社の将来が見えない」「地元に戻りたい」のいずれかが動機になる。</div></div>
+        </div>
+        <div class="pc-body">
+          <div class="pgrid">
+            <div class="f"><div class="fl">年齢</div><div class="fv">28〜38歳</div></div>
+            <div class="f"><div class="fl">経験</div><div class="fv">施工管理5〜10年／2級・一級保有</div></div>
+            <div class="f"><div class="fl">現職</div><div class="fv">地場ゼネコン／専門工事会社／県外の中堅</div></div>
+            <div class="f"><div class="fl">居住</div><div class="fv">山口県内、または下関出身のUターン希望</div></div>
+            <div class="f"><div class="fl">家族</div><div class="fv">既婚・子どもあり（転勤を避けたい動機）</div></div>
+            <div class="f"><div class="fl">年収</div><div class="fv">400〜600万円台</div></div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic" style="color:var(--info)"><use href="#i-search"/></svg>転職の軸（何と比べて動くか）</h4>
+            <div class="tags"><span class="tg pos">任される裁量</span><span class="tg pos">会社の将来性</span><span class="tg pos">地元・転勤なし</span><span class="tg">年収</span><span class="tg">書類負担の軽さ</span><span class="tg">評価の透明性</span></div>
+          </div>
+
+          <div class="two">
+            <div class="blk"><h4><svg class="ic" style="color:var(--teal)"><use href="#i-heart"/></svg>価値観・動機</h4>
+              <p class="li t">自分の判断で現場を回したい。任されたい</p>
+              <p class="li t">技術と経験を正しく評価されたい</p>
+              <p class="li t">家族のために地元で腰を据えたい</p>
+              <p class="li t">伸びる会社にいたい（沈む会社にいたくない）</p>
+            </div>
+            <div class="blk"><h4><svg class="ic" style="color:var(--warning)"><use href="#i-alert"/></svg>不安・ペインポイント</h4>
+              <p class="li w">地場企業の将来性（10年後この会社はあるか）</p>
+              <p class="li w">人が少なく、一人あたりの負担が重くないか</p>
+              <p class="li w">評価と給与の決まり方が不透明では</p>
+              <p class="li w">現職では書類・事務作業に時間を取られている</p>
+            </div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic"><use href="#i-check"/></svg>訴求ポイント（この区分だけの武器）</h4>
+            <div class="two">
+              <div>
+                <p class="li t"><b>DX専任部署が書類とICTを引き受ける</b>＝施工管理は現場管理に専念できる。これは同業でほぼ聞かない体制</p>
+                <p class="li t"><b>2030年に売上30億・建築へ参入・水道領域へ拡大</b>＝沈む会社ではなく伸びる会社という証明</p>
+                <p class="li t"><b>国交省案件を十数年ぶりに受注</b>＝発注者の格が上がる局面に立ち会える</p>
+              </div>
+              <div>
+                <p class="li t"><b>一級を取れば自分の名前で仕事が取れる</b>（経営事項審査・入札で評価される立場）</p>
+                <p class="li t"><b>定額残業代を廃止し、実残業に応じて支給</b>（2026年4月）＝待遇の誠実さ</p>
+                <p class="li t"><b>管理職世代の交代期</b>＝早期に中核ポジションを任される現実的な可能性</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catch">
+            <div class="cc">「現場に集中できる会社に、移りませんか。」</div>
+            <div class="cs">経験者の最大の不満（書類に追われる）を入口に、DX専任部署という固有の解決策へつなげます。</div>
+            <div class="spec">
+              <div class="sp"><span class="sl">求人タイトル</span>
+                <div class="sv">施工管理（経験者）／書類は専任部署が引き受けます。あなたは現場に集中してください。</div>
+                <div class="sv n">対案：「10年後もこの会社はあるか——そう考えて、伸びる側を選んだ。」／「一級を取ったら、自分の名前で仕事を取る。」</div>
+                <div class="sv n">サブ（条件は文末）：転勤なし／年間休日127日／実残業に応じた時間外手当／資格取得費は会社負担</div>
+              </div>
+              <div class="sp"><span class="sl">スカウト件名</span>
+                <div class="sv n">下関で、書類ではなく現場に向き合う施工管理へ／2030年に売上30億を目指す地場企業です</div>
+              </div>
+            </div>
+          </div>
+          <div class="src"><b>この区分の注意：</b>社内に中途入社者の在籍実績が確認できていないため、人物像は<b>市場の一般的な転職動機と、サンスパック固有の強みから組んだ仮説</b>です。中途社員が在籍していれば、その方への聞き取りで精度が上がります。あわせて「中途で入社された方は何名か」を確認させてください。</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 建設ディレクター -->
+    <section id="p3">
+      <div class="sh"><span class="chipico" style="background:rgba(29,175,144,.1);color:var(--teal)"><svg class="ic"><use href="#i-user"/></svg></span><div><h2>③ DX・ICT推進／建設ディレクター</h2><div class="en">New Field</div></div><span class="tag">戦略・最も差別化できる</span></div>
+      <div class="notice">この区分は<b>競合がまだ誰も本気で採っていない</b>領域です。令和4年4月から始動し、次世代開発部として組織図にも入っています。土木未経験者に門戸を開ける入口であり、同時に<b>他社が真似しにくい採用の看板</b>になります。</div>
+      <div class="pc">
+        <div class="pc-top c">
+          <div class="av c">3</div>
+          <div><div class="role">Strategic Persona</div><h3>ITで現場の仕組みを変えたい、土木未経験の若手</h3><div class="who">文系または情報系。PC作業が得意で、非効率を見つけて直すことに面白さを感じる。地元志向。「手に職」と「新しいことをやりたい」の両方を求めている。女性の割合が高い想定。</div></div>
+        </div>
+        <div class="pc-body">
+          <div class="pgrid">
+            <div class="f"><div class="fl">年齢</div><div class="fv">22〜28歳（新卒・若手中途）</div></div>
+            <div class="f"><div class="fl">性別</div><div class="fv">女性が多い想定（男女問わず）</div></div>
+            <div class="f"><div class="fl">学歴</div><div class="fv">文系・情報系。土木は未経験</div></div>
+            <div class="f"><div class="fl">スキル</div><div class="fv">Office・データ整理が得意／ITへの抵抗がない</div></div>
+            <div class="f"><div class="fl">居住</div><div class="fv">下関・山口県内</div></div>
+            <div class="f"><div class="fl">志向</div><div class="fv">内勤中心＋現場にも関わりたい</div></div>
+          </div>
+
+          <div class="two">
+            <div class="blk"><h4><svg class="ic" style="color:var(--info)"><use href="#i-search"/></svg>就活・転職の軸</h4>
+              <div class="tags" style="margin-bottom:8px"><span class="tg pos">成長できる環境</span><span class="tg pos">新しい仕事・裁量</span><span class="tg">地元</span><span class="tg">人間関係</span><span class="tg">理念への共感</span></div>
+              <p class="li">建設業を最初から志望していたわけではない。<b>「地元で、これから伸びる仕事」を探して出会う</b>層</p>
+            </div>
+            <div class="blk"><h4><svg class="ic" style="color:var(--warning)"><use href="#i-alert"/></svg>不安・ペインポイント</h4>
+              <p class="li w">土木の知識がゼロで役に立てるか</p>
+              <p class="li w">建設業＝きつい・古いというイメージ</p>
+              <p class="li w">「建設ディレクター」が何をする仕事か分からない</p>
+              <p class="li w">前例がない職種で、評価やキャリアが見えるか</p>
+            </div>
+          </div>
+
+          <div class="blk"><h4><svg class="ic"><use href="#i-check"/></svg>訴求ポイント</h4>
+            <div class="two">
+              <div>
+                <p class="li t"><b>ゼロから職域をつくる側に立てる</b>（令和4年始動、これから本格確立）</p>
+                <p class="li t"><b>次世代開発部という組織がすでにある</b>＝思いつきでなく経営の意思</p>
+                <p class="li t"><b>ICT測量・ドローン・3次元測量</b>に触れられる</p>
+              </div>
+              <div>
+                <p class="li t"><b>将来これ自体が新規事業になる構想</b>＝キャリアの伸びしろ</p>
+                <p class="li t"><b>女性が活躍している実績</b>（女性比率25%、2027年4月にも入社）</p>
+                <p class="li t">現場の負担を減らす＝<b>「誰かの役に立つ」実感が早い</b></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="catch">
+            <div class="cc">「建設現場を、ITで変える仕事があります。」</div>
+            <div class="cs">職種の説明から入る必要がある区分。何をする仕事かを、一行で伝わる形にしています。</div>
+            <div class="spec">
+              <div class="sp"><span class="sl">求人タイトル</span>
+                <div class="sv">建設ディレクター／土木は未経験でいい。現場の「紙とハンコ」を変える側になる。</div>
+                <div class="sv n">対案：「図面は読めなくても、非効率は見つけられる。」／「令和4年に始まった職種を、これから形にする人を探しています。」</div>
+                <div class="sv n">サブ（条件は文末）：文系・未経験歓迎／内勤中心／年間休日127日／転勤なし／女性活躍中</div>
+              </div>
+              <div class="sp"><span class="sl">採用LP ファーストビュー</span>
+                <div class="sv">建設現場を、ITで変える仕事があります。</div>
+                <div class="sv n">リード：ドローンで測る。データで図面をつくる。紙の書類をなくす。——サンスパックの「次世代開発部」で、土木の当たり前を書き換える仕事です。</div>
+              </div>
+            </div>
+          </div>
+          <div class="src ev"><b>根拠：</b>会社説明会資料（令和4年4月から建設ディレクター始動・次世代開発部の組織図）／追加ヒアリング回答（DX専任部署を確立し全現場のDXを担当、施工管理者は現場管理に専念、将来は新規事業にもなりえる）。</div>
+        </div>
+      </div>
+    </section>
+    <!-- ④⑤ -->
+    <section id="p45">
+      <div class="sh"><span class="chipico" style="background:#F1F5F9;color:var(--muted)"><svg class="ic"><use href="#i-route"/></svg></span><div><h2>④ 技能職／⑤ 将来の幹部候補</h2><div class="en">Others</div></div><span class="tag">方向性のみ</span></div>
+      <div class="notice">この2区分は、優先度と前提条件を確認してから詳細設計に入るのが妥当です。現時点での方向性を示します。</div>
+      <div class="mini">
+        <h4>④ 技能職（工事班）</h4>
+        <p class="lead">自社採用と協力会社の両軸で進める方針。技能実習生は想定しないため、<b>対象は地元人材に限定</b>されます。</p>
+        <p class="li">狙う層：手を動かす仕事が好きで、地元で安定して働きたい20〜30代。学歴・経験不問</p>
+        <p class="li">訴求：<b>安全運転表彰（5年1万円〜30年10万円）・優良工事表彰15万円/件</b>という金額が明示された表彰制度／社用車貸与／安全用品の全支給／完全週休2日</p>
+        <p class="li">打ち出しの方向：「体を使う仕事を、ちゃんと評価する会社」。<b>表彰金の金額を明示できるのは強い</b>（同業は曖昧なことが多い）</p>
+        <p class="li"><b>要確認</b>：自社の工事班を何名まで増やすのか。協力会社との比率をどう設計するか</p>
+      </div>
+      <div class="mini">
+        <h4>⑤ 将来の幹部候補</h4>
+        <p class="lead">内部昇格・外部採用・M&amp;Aを同時並行という方針のため、<b>採用単独では解けない区分</b>です。</p>
+        <p class="li">狙う層：30代後半〜40代。施工管理の実務に加え、組織づくり・後進育成に関心がある人。または異業種のマネジメント経験者</p>
+        <p class="li">訴求：<b>管理職世代の交代期＝ポジションが実際に空く</b>／2030年に売上30億・建築参入という拡大局面／人事評価制度をこれから作る＝制度づくりに関われる</p>
+        <p class="li">前提：<b>人事評価制度の完成が先</b>。評価とポジションの道筋が描けていない状態で幹部候補を採ると、入社後に不整合が起きます</p>
+        <p class="li">推奨：この区分は<b>内部育成（メンター制度・チャレンジシート・キャリアコンサルティング）を軸に据え、外部採用は補完</b>と位置づけるのが現実的です</p>
+      </div>
+    </section>
+
+    <!-- 採用要件 -->
+    <section id="req">
+      <div class="sh"><span class="chipico" style="background:rgba(174,28,60,.1);color:var(--primary)"><svg class="ic"><use href="#i-alert"/></svg></span><div><h2>採用要件（企業目線）</h2><div class="en">Hiring Criteria</div></div><span class="tag">ペルソナとは別視点</span></div>
+      <div class="notice">ここは「候補者はどんな人か（＝ペルソナ／候補者目線）」ではなく、「<b>会社としてどんな人を採りたいか</b>」です。選考の判断基準として使います。全区分に共通する軸を先に置き、区分固有の要件を下に補足します。</div>
+      <div class="card">
+        <div class="req">
+          <div class="rq must"><div class="t">MUST（外せない）</div><ul>
+            <li>人としての誠実さ</li>
+            <li>素直に学ぶ姿勢</li>
+            <li>人当たりが良い（嫌味がない）</li>
+            <li>地元で長く働く意思</li>
+          </ul></div>
+          <div class="rq want"><div class="t">WANT（あると尚可）</div><ul>
+            <li>着実な向上心・責任感</li>
+            <li>自分から動ける（活躍者の共通点）</li>
+            <li>自分の長所と短所を理解している</li>
+            <li>理念「美しい土木へ」への共感</li>
+          </ul></div>
+          <div class="rq neg"><div class="t">NG（採らない）</div><ul>
+            <li>自己中心的・利他でない</li>
+            <li>プライドが高く人の話を聞かない</li>
+            <li>コミュニケーションを避ける</li>
+            <li>指示待ち</li>
+          </ul></div>
+        </div>
+        <div class="src ev" style="margin-top:14px"><b>NG要件の根拠：</b>アンケートで「この会社に合わない人」＝プライドが高く人の意見を聞かない<b>7/8</b>、コミュニケーションを避ける<b>6/8</b>。経営側の認識（技術があっても誠実さを欠く人は組織に合わない）と完全に一致しています。<b>経営と現場が同じ人物像をNGとしている</b>ため、選考基準として機能します。</div>
+      </div>
+      <div class="card">
+        <h3 style="font-size:14px;font-weight:800;color:var(--s800);margin-bottom:10px">区分固有の追加要件</h3>
+        <p class="li"><b>新卒施工管理</b>：資格取得に向かって勉強を続けられること（技術があっても資格を取れない人は一定数いる、という経営の実感）</p>
+        <p class="li"><b>経験者施工管理</b>：一級または2級の保有、もしくは取得見込み。前職の不満を他責だけで語らないこと</p>
+        <p class="li"><b>建設ディレクター</b>：ITへの抵抗がないこと。現場に出ることを嫌がらないこと（内勤専任ではない）</p>
+        <p class="li"><b>技能職</b>：安全ルールを守れること。普通自動車免許</p>
+        <p class="li"><b>幹部候補</b>：数字で語れること。後進を育てる意欲</p>
+      </div>
+      <div class="src" style="margin-top:14px"><b>次回の決定事項：</b>①5区分の優先順位と5年間の必要人数 ②建築5〜10億に対応する「建築の施工管理」を6番目の区分として立てるか ③最優先区分（新卒施工管理）のペルソナ確定 ④そのペルソナに対する採用コンセプトの確定。<b>確定したペルソナは、求人原稿・スカウト文面・採用サイトのすべての起点になります。</b></div>
+    </section>
+
+    <div class="foot"><p>POWERED BY EISHIN Optia Cloud</p></div>
+
+  </main>
+</div></div></div>
+
+<script>
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll('.oa nav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  if(!secs.length)return;
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on', l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-20% 0px -60% 0px'});
+  secs.forEach(function(s){obs.observe(s)});
+})();
+</script>
+</body>
+</html>

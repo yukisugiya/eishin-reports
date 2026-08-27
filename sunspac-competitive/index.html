@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>採用競合分析（改訂版）｜株式会社サンスパック</title>
+</head>
+<body>
+<style>
+  .oa{
+    --bg:#F8FAFC; --card:#fff; --line:#E2E8F0; --line2:#F1F5F9;
+    --muted:#64748B; --s600:#475569; --s700:#334155; --s800:#1E293B;
+    --primary:#AE1C3C; --p10:rgba(174,28,60,.10); --p20:rgba(174,28,60,.22);
+    --pink:#E2506F; --teal:#1DAF90; --info:#1D3CAF; --success:#3CAF1D; --warning:#AF461D; --caution:#DBB424;
+    background:var(--bg); color:var(--s700); min-height:100vh; display:block; padding-bottom:40px;
+    font-family:-apple-system,'Hiragino Sans','Hiragino Kaku Gothic ProN','Noto Sans JP','Meiryo',sans-serif;
+    font-size:14px; line-height:1.75; -webkit-font-smoothing:antialiased;
+  }
+  .oa *{box-sizing:border-box}
+  .oa h1,.oa h2,.oa h3,.oa h4,.oa p,.oa ul,.oa li,.oa dl,.oa table{margin:0;padding:0}
+  .oa ul{list-style:none}
+  .oa .ic{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .oa .shell{max-width:1120px;margin:0 auto;padding:0 20px}
+  .oa .cols{display:flex;flex-direction:column;gap:28px;padding-top:28px}
+  @media(min-width:1024px){.oa .cols{flex-direction:row}}
+  .oa aside{display:none}
+  @media(min-width:1024px){.oa aside{display:block;width:236px;flex:none}}
+  .oa .side-sticky{position:sticky;top:28px}
+  .oa .logo{font-weight:800;color:var(--s800);font-size:15px;margin-bottom:22px;display:flex;align-items:center;gap:8px}
+  .oa .logo .mk{width:22px;height:22px;border-radius:6px;background:var(--primary);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:13px;font-weight:800}
+  .oa nav a{display:flex;align-items:center;gap:11px;border-radius:9px;padding:10px 13px;font-size:13px;font-weight:600;color:var(--s600);text-decoration:none;transition:all .15s}
+  .oa nav a:hover{background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.05)}
+  .oa nav a.on{background:var(--p10);color:var(--primary)}
+  .oa main{min-width:0;flex:1;display:flex;flex-direction:column;gap:30px}
+  .oa .hero{position:relative;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:linear-gradient(135deg,#F8FAFC,#fff 55%,rgba(29,60,175,.05));padding:30px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+  .oa .hero .blob1{position:absolute;right:-70px;top:-70px;width:230px;height:230px;border-radius:50%;background:radial-gradient(closest-side,rgba(226,80,111,.12),transparent);filter:blur(8px)}
+  .oa .hero .blob2{position:absolute;left:-60px;bottom:-60px;width:180px;height:180px;border-radius:50%;background:radial-gradient(closest-side,rgba(29,60,175,.12),transparent);filter:blur(8px)}
+  .oa .hero .in{position:relative;z-index:1}
+  .oa .hero .co{display:flex;align-items:center;gap:8px;margin-bottom:14px;color:var(--muted);font-size:13.5px;flex-wrap:wrap}
+  .oa .hero .co b{color:var(--s600);font-weight:700} .oa .hero .co .sep{color:#CBD5E1}
+  .oa .hero h1{font-size:22px;font-weight:800;color:var(--s800);line-height:1.45}
+  @media(min-width:768px){.oa .hero h1{font-size:25px}}
+  .oa .hero .sub{color:var(--muted);font-size:13.5px;margin-top:9px}
+  .oa .hero .chips{display:flex;flex-wrap:wrap;gap:9px;margin-top:16px}
+  .oa .chip{border-radius:999px;font-size:12px;font-weight:700;padding:5px 13px;background:var(--p10);color:var(--primary);border:1px solid var(--p20)}
+  .oa .chip.sec{background:#F8FAFC;color:var(--s600);border-color:var(--line);font-weight:600}
+  .oa .chip.meta{background:transparent;border:none;color:#94A3B8;font-weight:500;padding:5px 0;display:flex;align-items:center;gap:6px}
+  .oa section{scroll-margin-top:24px}
+  .oa .sh{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line2);padding-bottom:12px;margin-bottom:20px}
+  .oa .sh .chipico{border-radius:10px;background:var(--p10);color:var(--primary);padding:8px;display:inline-flex}
+  .oa .sh .chipico .ic{width:20px;height:20px}
+  .oa .sh h2{font-size:19px;font-weight:800;color:var(--s800);line-height:1.4}
+  .oa .sh .en{font-size:11px;font-weight:700;letter-spacing:.14em;color:#94A3B8;text-transform:uppercase;margin-top:1px}
+  .oa .sh .tag{margin-left:auto;font-size:10.5px;font-weight:700;color:var(--muted);background:#F1F5F9;border:1px solid var(--line);border-radius:999px;padding:3px 10px;white-space:nowrap}
+  .oa .card{border-radius:12px;border:1px solid var(--line);background:var(--card);padding:22px;box-shadow:0 1px 3px rgba(15,23,42,.05)}
+  .oa .card+.card{margin-top:16px}
+  .oa .notice{border-radius:9px;background:#F1F5F9;border:1px dashed #CBD5E1;padding:12px 15px;font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+  .oa .notice b{color:var(--s700)}
+  .oa .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+  .oa .stat{border-radius:12px;border:1px solid var(--line);background:#fff;padding:15px;text-align:center;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+  .oa .stat .n{font-size:26px;font-weight:800;color:var(--primary);line-height:1.1}
+  .oa .stat .n .u{font-size:12.5px;color:var(--muted);font-weight:700}
+  .oa .stat .c{font-size:11px;color:var(--muted);margin-top:7px;line-height:1.5}
+  .oa .foot{border-top:1px solid var(--line);margin-top:14px;padding:18px 0 0;text-align:center}
+  .oa .foot p{font-size:11px;letter-spacing:.12em;color:#94A3B8;font-weight:600}
+  .oa .tgg{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .oa .tgc{border-radius:11px;border:1px solid var(--line);background:#fff;padding:14px 16px;box-shadow:0 1px 2px rgba(15,23,42,.04);border-left:3px solid var(--muted)}
+  .oa .tgc.s{border-left-color:var(--primary)} .oa .tgc.d{border-left-color:var(--info)} .oa .tgc.v{border-left-color:var(--teal)}
+  .oa .tgc .ty{font-size:9.5px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+  .oa .tgc.s .ty{color:var(--primary)} .oa .tgc.d .ty{color:var(--info)} .oa .tgc.v .ty{color:var(--teal)}
+  .oa .tgc h4{font-size:14px;font-weight:800;color:var(--s800);margin-bottom:4px}
+  .oa .tgc .sz{font-size:10.5px;color:#94A3B8;margin-bottom:5px}
+  .oa .tgc p{font-size:11.5px;color:var(--s600);line-height:1.6}
+  .oa .tscroll{overflow-x:auto;border-radius:12px;border:1px solid var(--line);box-shadow:0 1px 3px rgba(15,23,42,.05)}
+  .oa table.cmp{border-collapse:collapse;width:100%;min-width:900px;font-size:11.5px;background:#fff}
+  .oa table.cmp th,.oa table.cmp td{border-bottom:1px solid var(--line2);border-right:1px solid var(--line2);padding:9px 11px;vertical-align:top;text-align:left;line-height:1.55}
+  .oa table.cmp thead th{background:#F8FAFC;font-weight:800;color:var(--s800)}
+  .oa table.cmp thead th.self{background:var(--p10);color:var(--primary)}
+  .oa table.cmp tbody th{background:#FBFCFE;font-weight:700;color:var(--s700);white-space:nowrap;font-size:11px}
+  .oa table.cmp td.self{background:rgba(174,28,60,.03)}
+  .oa table.cmp .sub{color:#94A3B8;font-size:10px;display:block}
+  .oa .mk{font-weight:800} .oa .mk.g{color:#0F7A63} .oa .mk.r{color:#B02A45} .oa .mk.y{color:var(--warning)}
+  .oa .zone{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .oa .zc{border-radius:12px;padding:18px 20px;border:1px solid}
+  .oa .zc.jam{background:rgba(175,70,29,.05);border-color:rgba(175,70,29,.28)}
+  .oa .zc.gap{background:rgba(29,175,144,.06);border-color:rgba(29,175,144,.3)}
+  .oa .zc h4{font-size:13px;font-weight:800;margin-bottom:4px}
+  .oa .zc.jam h4{color:var(--warning)} .oa .zc.gap h4{color:#0F7A63}
+  .oa .zc .lead{font-size:11.5px;color:var(--muted);margin-bottom:11px;line-height:1.6}
+  .oa .zc li{font-size:12.5px;color:var(--s700);padding:5px 0 5px 17px;position:relative;line-height:1.6}
+  .oa .zc.jam li::before{content:"✕";position:absolute;left:0;color:var(--warning);font-weight:700}
+  .oa .zc.gap li::before{content:"○";position:absolute;left:0;color:var(--teal);font-weight:700}
+  .oa .zc li b{color:var(--s800)}
+  .oa .alert{border-radius:12px;background:rgba(223,58,93,.06);border:1px solid rgba(223,58,93,.3);padding:18px 20px;margin-bottom:16px}
+  .oa .alert h3{font-size:15px;font-weight:800;color:#B02A45;margin-bottom:7px}
+  .oa .alert p{font-size:13px;color:var(--s700);line-height:1.8} .oa .alert p b{color:#B02A45}
+  .oa .pos{border-radius:12px;padding:20px 22px;background:linear-gradient(135deg,rgba(226,80,111,.05),#fff 60%,rgba(29,175,144,.05));border:1px solid var(--line)}
+  .oa .pos h3{font-size:16px;font-weight:800;color:var(--s800);margin-bottom:9px}
+  .oa .pos p{font-size:13px;color:var(--s700);line-height:1.8} .oa .pos p+p{margin-top:9px} .oa .pos b{color:var(--primary)}
+  .oa .matrix{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+  .oa .mx{border-radius:11px;border:1px solid var(--line);background:#fff;padding:14px 16px}
+  .oa .mx .n{font-size:12px;font-weight:800;color:var(--s800);margin-bottom:6px}
+  .oa .mx .r{font-size:11.5px;color:var(--s600);line-height:1.6}
+  .oa .mx .r b{color:var(--s800)}
+  .oa .mx.win{border-color:rgba(29,175,144,.4);background:rgba(29,175,144,.04)}
+  .oa .usp{border-radius:12px;border:1px solid var(--line);background:#fff;box-shadow:0 1px 2px rgba(15,23,42,.04);padding:17px 19px;display:flex;gap:14px}
+  .oa .usp+.usp{margin-top:13px}
+  .oa .usp .no{width:30px;height:30px;flex:none;border-radius:9px;background:var(--p10);color:var(--primary);font-weight:800;display:flex;align-items:center;justify-content:center;font-size:14px}
+  .oa .usp h4{font-size:15px;font-weight:800;color:var(--s800);margin-bottom:5px;line-height:1.5}
+  .oa .usp p{font-size:12.5px;color:var(--s600);line-height:1.7}
+  .oa .usp .ev{font-size:11px;color:#0F7A63;margin-top:6px;font-weight:600}
+  .oa .conn{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+  .oa .cn{border-radius:12px;border:1px solid var(--line);background:#fff;padding:15px 17px;box-shadow:0 1px 2px rgba(15,23,42,.04);border-top:3px solid var(--primary)}
+  .oa .cn.c2{border-top-color:var(--teal)} .oa .cn.c3{border-top-color:var(--info)}
+  .oa .cn .k{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+  .oa .cn h4{font-size:13.5px;font-weight:800;color:var(--s800);margin-bottom:6px}
+  .oa .cn p{font-size:11.5px;color:var(--s600);line-height:1.65}
+  .oa .src{font-size:11px;color:var(--muted);line-height:1.85}
+  .oa .src a{color:var(--info);text-decoration:none;word-break:break-all} .oa .src b{color:var(--s700)}
+  .oa .notice{border-radius:9px;background:#F1F5F9;border:1px dashed #CBD5E1;padding:12px 15px;font-size:12.5px;color:var(--muted);line-height:1.7;margin-bottom:16px}
+  .oa .notice b{color:var(--s700)}
+  @media(max-width:760px){.oa .tgg,.oa .matrix,.oa .conn{grid-template-columns:1fr}.oa .zone{grid-template-columns:1fr}}
+</style>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4M10 10h4M10 14h4M10 18h4"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18M8 2v4M16 2v4"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="M14.1 5.5a2 2 0 0 0 1.8 0l3.6-1.8A1 1 0 0 1 21 4.6v12.8a1 1 0 0 1-.6.9l-4.5 2.3a2 2 0 0 1-1.8 0l-4.2-2.1a2 2 0 0 0-1.8 0l-3.7 1.8A1 1 0 0 1 3 19.4V6.6a1 1 0 0 1 .6-.9l4.5-2.3a2 2 0 0 1 1.8 0z"/><path d="M9 4v13M15 7v13"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="M11.5 2.3a.5.5 0 0 1 .9 0l2.3 4.7a2 2 0 0 0 1.6 1.1l5.2.8a.5.5 0 0 1 .3.9l-3.7 3.6a2 2 0 0 0-.6 1.9l.9 5.1a.5.5 0 0 1-.8.6l-4.6-2.4a2 2 0 0 0-2 0L6.4 21a.5.5 0 0 1-.8-.6l.9-5.1a2 2 0 0 0-.6-1.9L2.2 9.8a.5.5 0 0 1 .3-.9l5.2-.8a2 2 0 0 0 1.6-1.1z"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.8 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/></symbol>
+</defs></svg>
+
+<div class="oa"><div class="shell"><div class="cols">
+
+  <aside><div class="side-sticky">
+    <div class="logo"><span class="mk">O</span>EISHIN Optia Cloud</div>
+    <nav>
+      <a href="#scope" class="on"><svg class="ic"><use href="#i-users"/></svg>調査対象</a>
+      <a href="#compare"><svg class="ic"><use href="#i-grid"/></svg>横並び比較</a>
+      <a href="#map"><svg class="ic"><use href="#i-map"/></svg>訴求軸マップ</a>
+      <a href="#position"><svg class="ic"><use href="#i-flag"/></svg>取れるポジション</a>
+      <a href="#usp"><svg class="ic"><use href="#i-star"/></svg>USP仮説</a>
+      <a href="#connect"><svg class="ic"><use href="#i-link"/></svg>提案への接続</a>
+      <a href="#src"><svg class="ic"><use href="#i-doc"/></svg>出典</a>
+    </nav>
+  </div></aside>
+
+  <main>
+
+    <div class="hero"><div class="blob1"></div><div class="blob2"></div><div class="in">
+      <div class="co"><svg class="ic" style="width:16px;height:16px;color:#64748B"><use href="#i-building"/></svg><b>株式会社サンスパック</b><span class="sep">|</span><span>採用競合分析（改訂版）</span></div>
+      <h1>同じ候補者を取り合う会社と、勝てる場所</h1>
+      <div class="sub">御社が意識されている実在企業を対象に、採用発信と会社全体の競争優位を二層で比較しました。結論として、狙うべき場所は前回の想定から変わります。</div>
+      <div class="chips">
+        <span class="chip">実名5社＋自社</span>
+        <span class="chip sec">採用発信＋経営実態の二層</span>
+        <span class="chip meta"><svg class="ic" style="width:14px;height:14px"><use href="#i-cal"/></svg>2026.08 調査</span>
+      </div>
+    </div></div>
+
+    <!-- 調査対象 -->
+    <section id="scope">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-users"/></svg></span><div><h2>調査対象</h2><div class="en">Scope</div></div><span class="tag">併願リアリティで選定</span></div>
+      <div class="notice">採用競合は「同じ候補者を取り合う相手」です。御社に挙げていただいた企業から、<b>下関の地元志向の候補者が現実に同時に検討しうる会社</b>を優先し、深掘り対象を絞りました。全国転勤が前提の大手は、同じ土俵にいないため対象外としています。</div>
+      <div class="tgg">
+        <div class="tgc s"><div class="ty">自社・基準</div><h4>サンスパック</h4><div class="sz">32名／下関市田中町</div><p>法面保護・交通安全施設・橋梁補修。差分抽出のため同じ項目で調査</p></div>
+        <div class="tgc d"><div class="ty">直接競合・最大</div><h4>住吉工業</h4><div class="sz">161名（G269名）／下関市長府</div><p>売上63億（G103.5億）。土木＋建築＋ダム・トンネル・水道。国交大臣許可24業種</p></div>
+        <div class="tgc d"><div class="ty">直接競合・事業一致</div><h4>ミカド交設</h4><div class="sz">20名／下関市上田中町</div><p>法面保護・交通安全施設・構造物メンテ。<b>事業と発注者がほぼ完全一致</b></p></div>
+        <div class="tgc d"><div class="ty">直接競合・採用巧者</div><h4>コプロス</h4><div class="sz">下関市長府</div><p>マイナビPV山口1位。「世界の環境を創造」「超一流になる覚悟はあるか」</p></div>
+        <div class="tgc d"><div class="ty">直接競合・県内</div><h4>大栄建設</h4><div class="sz">宇部市</div><p>昭和2年創業。新卒6年で16名・定着率100%を訴求</p></div>
+        <div class="tgc v"><div class="ty">価値競合</div><h4>中国電力NW ほか</h4><div class="sz">山口NC／公務員</div><p>「地元で安定」の最右翼。アンケートで実際に比較された先</p></div>
+      </div>
+      <div class="notice" style="margin-top:14px;margin-bottom:0">簡易確認：芝田建設（豊浦）・いのけん（豊北）・山口道路興業（防府）・澤田建設（防府）・サン・ロード（山口市）。※<b>北九州エリアは御社も未把握</b>とのことでしたが、関門海峡を越えた通勤・Uターン圏として実際に競合しうるため、次フェーズでの調査をおすすめします。</div>
+    </section>
+
+    <!-- 比較 -->
+    <section id="compare">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-grid"/></svg></span><div><h2>横並び比較 ─ 採用発信と経営実態</h2><div class="en">Comparison</div></div><span class="tag">実測・出典あり</span></div>
+      <div class="tscroll">
+        <table class="cmp">
+          <thead><tr>
+            <th>項目</th><th class="self">サンスパック<span class="sub">自社</span></th><th>住吉工業<span class="sub">161名・下関</span></th><th>ミカド交設<span class="sub">20名・下関</span></th><th>コプロス<span class="sub">下関</span></th><th>大栄建設<span class="sub">宇部</span></th>
+          </tr></thead>
+          <tbody>
+            <tr><th>採用<br>キャッチコピー</th>
+              <td class="self">「君の一歩が、常識を変える」<span class="sub">※理念「美しい土木へ」は採用サイトに未掲載</span></td>
+              <td>「君の挑戦は、形になる。」</td>
+              <td><b>「我らインフラキーパー」</b><span class="sub">山口を愛するフィールダーへ／ふるさとに必要な会社を一緒に作ろう！</span></td>
+              <td>「世界の環境を創造する」<span class="sub">超一流になる覚悟はあるか</span></td>
+              <td>「一緒に築こう、明日の街を。」</td></tr>
+            <tr><th>理念の<br>採用実装</th>
+              <td class="self"><span class="mk r">未実装</span><span class="sub">説明会では全文を語るがサイトに無い</span></td>
+              <td><span class="mk y">弱い</span><span class="sub">コピーは汎用的</span></td>
+              <td><span class="mk g">実装済</span><span class="sub">トップFV＝採用コピー。職種名も独自（フィールドマネージャー／クラフトマン）</span></td>
+              <td><span class="mk g">実装済</span><span class="sub">全チャネル統一</span></td>
+              <td><span class="mk y">部分</span></td></tr>
+            <tr><th>社員<br>インタビュー</th>
+              <td class="self"><span class="mk r">0本</span></td>
+              <td><span class="mk g">24本</span><span class="sub">住吉工業分9本</span></td>
+              <td><span class="mk r">0本</span></td>
+              <td><span class="mk g">多数</span></td>
+              <td><span class="mk g">あり</span><span class="sub">先輩の声・若手座談会</span></td></tr>
+            <tr><th>数字で見る<br>ページ</th>
+              <td class="self"><span class="mk r">なし</span><span class="sub">説明会資料には存在</span></td>
+              <td><span class="mk g">独立ページ</span><span class="sub">269名・平均45.9歳・勤続11.2年・保有資格290</span></td>
+              <td><span class="mk r">なし</span></td>
+              <td><span class="mk g">あり</span></td>
+              <td><span class="mk y">媒体側のみ</span></td></tr>
+            <tr><th>新卒採用<br>実績</th>
+              <td class="self">2023年2名／2025年4名／2026年2名</td>
+              <td><b>2023年4名／2024年10名／2025年10名</b><span class="sub">定着率2025年100%</span></td>
+              <td><span class="mk r">新卒採用なし</span><span class="sub">中途のみ・高卒以上・経験不問</span></td>
+              <td>大量採用<span class="sub">文理不問・文系8割</span></td>
+              <td>6年で16名</td></tr>
+            <tr><th>年間休日</th>
+              <td class="self">127日</td>
+              <td><b>127日</b><span class="sub">残業月平均8.0時間</span></td>
+              <td>120日<span class="sub">有給取得率90%超・10連休2回</span></td>
+              <td>113日</td>
+              <td>125日</td></tr>
+            <tr><th>奨学金<br>返還支援</th>
+              <td class="self">最大100万円<span class="sub">下関市制度</span></td>
+              <td><b>あり</b><span class="sub">半額〜条件により全額</span></td>
+              <td>記載なし</td>
+              <td>記載なし</td>
+              <td>記載なし</td></tr>
+            <tr><th>DX・ICT</th>
+              <td class="self"><b>専任部署を確立する方針</b><span class="sub">次世代開発部／建設ディレクター（令和4年始動）</span></td>
+              <td>DX推進・重機の遠隔操作実験<span class="sub">専任部署かは未確認</span></td>
+              <td>記載なし</td>
+              <td>記載なし</td>
+              <td>建設ディレクター職で募集</td></tr>
+            <tr><th>女性活躍</th>
+              <td class="self"><b>女性比率25%</b><span class="sub">20代女性施工管理2名／2027年4月に施工管理2名入社予定／やまぐち女性活躍推進（2026）</span></td>
+              <td>女性活躍ページあり<span class="sub">新卒2025年 女2/10名</span></td>
+              <td>「女性・若手社員大歓迎」<span class="sub">女性2名／21名</span></td>
+              <td>未確認</td>
+              <td>未確認</td></tr>
+            <tr><th>事業領域<br>（2030年）</th>
+              <td class="self">土木＋<b>建築へ参入</b>＋水道・橋梁拡大<span class="sub">売上30億目標／国交省案件を十数年ぶり受注</span></td>
+              <td><b>既に建築・水道・ダム・トンネルを保有</b><span class="sub">広島支店・北九州</span></td>
+              <td>維持修繕に特化<span class="sub">国交省・県・市</span></td>
+              <td>メーカー型建設</td>
+              <td>土木・建築・設備</td></tr>
+            <tr><th>SNS採用</th>
+              <td class="self"><span class="mk r">ほぼ無</span></td>
+              <td><span class="mk y">社長YouTube・FB</span><span class="sub">採用専用は無し</span></td>
+              <td><span class="mk y">卓球パークIG</span><span class="sub">529人・8ヶ月更新停止</span></td>
+              <td><span class="mk g">X/IG/TikTok/YT</span></td>
+              <td>IG 1本（197）</td></tr>
+            <tr><th>独自の<br>採用チャネル</th>
+              <td class="self">社長が全選考を1対1</td>
+              <td>グループ横断の採用サイト</td>
+              <td><b>社内に卓球場（8台）</b><span class="sub">従業員の約1/3が卓球経由で入社</span></td>
+              <td>SNS総動員</td>
+              <td>若手座談会</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- 訴求軸マップ -->
+    <section id="map">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-map"/></svg></span><div><h2>訴求軸マップ ─ 混雑と空白</h2><div class="en">Appeal Map</div></div></div>
+      <div class="alert">
+        <h3>重要な発見：条件面の優位は、すでに存在しません</h3>
+        <p>今回の調査で明確になったのは、<b>年間休日127日は住吉工業と完全に同じ</b>、<b>奨学金返還支援も住吉工業が実施している</b>（しかも半額〜条件により全額）という事実です。さらに住吉工業は残業月平均8.0時間、新卒は年10名採用・定着率100%、社員インタビュー24本と数字ページを備えた採用サイトを持っています。<b>同じ下関で、規模5倍・新卒採用2.5倍の会社が、条件でも発信でも先に行っている</b>——これが現実の競争環境です。条件を並べる勝負は成立しません。</p>
+      </div>
+      <div class="zone">
+        <div class="zc jam">
+          <h4>混雑ゾーン（主役にしても差がつかない）</h4>
+          <p class="lead">複数社が同等以上を提示済み。ここを前面に出すと比較負けします。</p>
+          <ul>
+            <li><b>年間休日</b>：サンスパック127日＝住吉工業127日。大栄125日</li>
+            <li><b>奨学金返還支援</b>：住吉工業も実施（半額〜全額）</li>
+            <li><b>資格取得支援</b>：住吉工業は全額負担＋専門学校受講費補助。ミカド交設は半額助成。全社完備</li>
+            <li><b>転勤なし・地元</b>：ミカド交設・大栄建設も同条件。中電も中国5県で地元を主張</li>
+            <li><b>未経験歓迎</b>：全社が明記</li>
+            <li><b>安定性（公共工事）</b>：ミカド交設は国交省・県・市で発注者構成が同じ。住吉工業は規模で圧倒</li>
+          </ul>
+        </div>
+        <div class="zc gap">
+          <h4>空白ゾーン（サンスパックだけが取れる）</h4>
+          <p class="lead">競合が持っていない、かつ御社に実弾があるもの。</p>
+          <ul>
+            <li><b>理念 × 人 × 未来の3点セット</b>：ミカド交設は理念があるが社員インタビュー0本・新卒採用なし。住吉工業は人（24本）があるが理念が汎用的。<b>3つ揃えられるのは御社だけ</b></li>
+            <li><b>女性の施工管理という実績</b>：20代の女性施工管理2名＋2027年4月に2名入社。同業で女性の施工管理を具体的な人数で語れる会社は他にない</li>
+            <li><b>DX専任部署が現場の書類を引き受ける構造</b>：住吉工業もDXは推進するが「専任部署が全現場を担う」構造は見えない。ミカド交設は記載なし</li>
+            <li><b>これから建築・水道へ広がる会社という物語</b>：住吉工業は既に到達済みで物語にならない。<b>御社は今から変わる会社＝候補者が成長に立ち会える</b></li>
+          </ul>
+        </div>
+      </div>
+      <div class="matrix">
+        <div class="mx"><div class="n">住吉工業に勝てない場所</div><div class="r">規模・売上・待遇レンジ・新卒採用数・採用サイトの物量。<b>ここでは戦わない</b></div></div>
+        <div class="mx"><div class="n">ミカド交設に注意すべき場所</div><div class="r">理念の言語化。「我らインフラキーパー」は「美しい土木へ」と同じ構造で、<b>先に採用サイトへ実装されている</b></div></div>
+        <div class="mx win"><div class="n">サンスパックが勝てる場所</div><div class="r"><b>理念を"人"と"未来"で証明すること</b>。哲学・女性の実績・DX構想・2030年の成長。この4点が揃うのは御社だけ</div></div>
+      </div>
+    </section>
+
+    <!-- ポジション -->
+    <section id="position">
+      <div class="sh"><span class="chipico" style="background:rgba(29,60,175,.1);color:var(--info)"><svg class="ic"><use href="#i-flag"/></svg></span><div><h2>サンスパックが取れるポジション</h2><div class="en">Positioning</div></div></div>
+      <div class="pos">
+        <h3>「これから変わる会社の、最初の世代になれる」</h3>
+        <p>下関の同業3社は、それぞれ違う旗を立てています。<b>住吉工業＝規模と安定（すでに完成した会社）</b>、<b>ミカド交設＝ふるさとを守る使命（維持修繕に特化）</b>、<b>コプロス＝世界と超一流（上昇志向）</b>。この3つの間に、まだ誰も取っていない場所があります。</p>
+        <p>それが<b>「変わる途中の会社」</b>というポジションです。2025年に理念を掲げ直し、2026年に規程を全面刷新し、DX専任部署をこれから確立し、建築と水道へ広がり、国交省案件を十数年ぶりに受注した——<b>いま御社は明確に変化の途上にあります</b>。完成した会社に入るのではなく、<b>変わっていく会社の最初の世代になる</b>。これは住吉工業（完成済み）にもミカド交設（特化型）にも言えません。</p>
+        <p>そして、この物語の説得力を担保するのが<b>「美しい土木へ」という哲学</b>です。ただし条件は一つあります。<b>哲学は、人の顔と具体的な仕事で証明されないと、ただの標語になります</b>。ミカド交設が理念を掲げながら社員インタビュー0本であることが、その証拠です。御社が勝つ条件は、<b>哲学を"誰が""何をして"証明するかまで見せること</b>——ここに尽きます。</p>
+      </div>
+    </section>
+
+    <!-- USP -->
+    <section id="usp">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-star"/></svg></span><div><h2>USP仮説 3案</h2><div class="en">USP Hypotheses</div></div></div>
+      <div class="usp"><div class="no">1</div><div>
+        <h4>変わる途中の会社に、最初から関われる</h4>
+        <p>2025年の理念刷新、2026年の規程全面改定、DX専任部署の確立、建築・水道への拡大、国交省案件の受注。<b>これらを「会社が変わっていく実況」として見せる</b>。完成した会社を選ぶのではなく、変える側に立てるという訴求は、住吉工業にもミカド交設にも出せません。</p>
+        <p class="ev">実弾：中期経営計画（2026-2030）／売上30億目標／建築5〜10億／国交省案件を十数年ぶり受注</p>
+      </div></div>
+      <div class="usp"><div class="no">2</div><div>
+        <h4>女性が施工管理として現場を任される会社</h4>
+        <p>女性比率25%、20代の女性施工管理2名、2027年4月にさらに施工管理2名が入社予定。<b>「女性活躍」を制度ではなく人数と職種で語れる</b>のは、地場同業でほぼ唯一です。会社説明会で既に「むしろ女性の方が向いています」と語っている強みを、そのまま外に出す形になります。</p>
+        <p class="ev">実弾：やまぐち女性の活躍推進事業者（2026認定）→えるぼし認定へ／産育休の取得・復帰実績</p>
+      </div></div>
+      <div class="usp"><div class="no">3</div><div>
+        <h4>書類は専任部署が引き受け、施工管理は現場に集中する</h4>
+        <p>建設業の施工管理が抱える最大の不満（書類・事務作業に時間を奪われる）に対し、<b>「DX専任部署が全現場を担当する」という組織的な解決策</b>を提示できます。とくに経験者採用で効きます。同業の求人でここまで踏み込んだ提示は確認できませんでした。</p>
+        <p class="ev">実弾：次世代開発部の組織図／建設ディレクター（令和4年始動）／ICT測量の実施</p>
+      </div></div>
+    </section>
+
+    <!-- 接続 -->
+    <section id="connect">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-link"/></svg></span><div><h2>提案への接続</h2><div class="en">Connection</div></div></div>
+      <div class="conn">
+        <div class="cn c1"><div class="k">上流設計</div><h4>採用コンセプト</h4><p>「美しい土木へ」を採用の言葉に翻訳する。ミカド交設が先に理念を実装しているため、<b>抽象的な使命の言い換えでは差がつかない</b>。哲学＋人＋未来の3点で組む。</p></div>
+        <div class="cn c2"><div class="k">制作</div><h4>採用サイト・LP</h4><p>社員インタビューと現場写真が最優先。<b>住吉工業24本という現実</b>を踏まえ、本数で競うのではなく「女性の施工管理」「建設ディレクター」という他社にない登場人物で差をつける。</p></div>
+        <div class="cn c3"><div class="k">WEB広告</div><h4>広告×専用LP</h4><p>コプロス以外はSNS・広告面が手薄。<b>混雑した条件訴求を避け、女性 × 施工管理／未経験 × DXという狭いが空いている入口</b>を狙い撃つ。</p></div>
+      </div>
+    </section>
+
+    <!-- 出典 -->
+    <section id="src">
+      <div class="sh"><span class="chipico"><svg class="ic"><use href="#i-doc"/></svg></span><div><h2>出典</h2><div class="en">Sources</div></div><span class="tag">取得 2026-08-25</span></div>
+      <div class="card"><div class="src">
+        <p><b>住吉工業：</b>kogyo.smgp.co.jp（会社概要）／smgp.co.jp/recruit・/about-numbers（数字で見る）／マイナビ2027 corp223538／マイナビ転職 408932／やま建Navi 3891／キャリアマップ／ハローワーク</p>
+        <p><b>ミカド交設：</b>mikado-kousetsu.jp（/home・/recruit-message・/recruit-engineers・/recruit-craftman・/company-strength）／やま建Navi 4369／TSSテレビ新広島「そ〜だったのかンパニー」／mikadottp.com／Instagram @mikado.t.t.park</p>
+        <p><b>コプロス：</b>copros.co.jp/recruit／マイナビ2027 corp204804　<b>大栄建設：</b>daiei-c.jp/recruitment／マイナビ2027 corp242415　<b>中国電力NW：</b>energia.co.jp/nw</p>
+        <p><b>サンスパック：</b>recruit-sunspac.jp／sunspac.com／会社説明会資料（2026.06.08）／中期経営計画書（2026年1月）／追加ヒアリング回答（2026.08）／社員名簿・規程集</p>
+        <p style="margin-top:9px;color:#94A3B8">注記：住吉工業の設立年は公式サイト表記（昭和31年）を採用（やま建Naviは昭和34年と記載）。同名の別法人（名古屋の大栄建設・大阪の友田組・福岡のコプロコンストラクション・杉並区のミカドスポーツ）は所在地で照合し除外。数値は概数および取得日時点の公開情報。未確認項目：住吉工業の大卒初任給・公共工事比率、ミカド交設の求人媒体展開。</p>
+      </div></div>
+    </section>
+
+    <div class="foot"><p>POWERED BY EISHIN Optia Cloud</p></div>
+
+  </main>
+</div></div></div>
+
+<script>
+(function(){
+  var links=Array.prototype.slice.call(document.querySelectorAll('.oa nav a'));
+  var secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))}).filter(Boolean);
+  if(!secs.length)return;
+  var obs=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){links.forEach(function(l){l.classList.toggle('on', l.getAttribute('href')==='#'+e.target.id)})}})},{rootMargin:'-20% 0px -60% 0px'});
+  secs.forEach(function(s){obs.observe(s)});
+})();
+</script>
+</body>
+</html>
